@@ -5,3 +5,31 @@
   line-height: 20px;
   color: #000000;
 }
+
+.function-cat__headline {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.function-cat__slogan {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.function-cat__button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #68b738;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 14px 73px;
+  display: flex;
+  justify-content: space-around;
+}
