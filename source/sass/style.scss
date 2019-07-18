@@ -1,0 +1,15 @@
+@import "base/typography.scss";
+@import "../sass/normalize";
+@import "abstracts/globalstyle";
+@import "page-header/page-header";
+@import "page-header/main-nav";
+@import "page-header/main-nav__list";
+@import "page-main/program-cat__list";
+@import "page-main/function-cat";
+@import "page-main/program-cat";
+@import "page-main/how-work";
+@import "page-main/catalog";
+@import "page-main/page-else";
+@import "page-footer/page-footer";
+@import "page-footer/copyright";
+@import "page-footer/page-footer__social";

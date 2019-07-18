@@ -1,0 +1,52 @@
+.catalog__product {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #111111;
+  text-align: center;
+}
+
+.catalog__list {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__item {
+  list-style: none;
+}
+
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.catalog__info {
+  margin-bottom: 23px;
+}
+
+.catalog__volume,
+.catalog__taste,
+.catalog__price {
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  text-transform: uppercase;
+  padding: 13px 110px;
+  text-decoration: none;
+}

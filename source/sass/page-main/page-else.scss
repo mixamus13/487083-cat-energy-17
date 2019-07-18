@@ -1,0 +1,33 @@
+.page-else {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-else__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.page-else__description {
+  font-family: "ArialMT", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  margin-bottom: 22px;
+}
+
+.page-else__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 13px 95px;
+  background-color: #f2f2f2;
+}
