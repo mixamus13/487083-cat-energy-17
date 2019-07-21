@@ -1,17 +1,24 @@
+.how-work {
+  @include list-reset;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .how-work__headline {
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
   text-transform: initial;
   color: #111111;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
+}
+
+.how-work__list {
+  @include list-reset;
 }
 
 .how-work__item {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
 }
 
 .how-work__description {

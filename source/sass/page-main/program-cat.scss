@@ -7,8 +7,9 @@
 }
 
 .program-cat__list {
-  padding: 0;
-  margin: 0;
+  @include list-reset;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .program-cat__title {
@@ -29,7 +30,7 @@
 }
 
 .program-cat__item {
-  list-style: none;
+  @include list-reset;
 }
 
 .program-cat__slim,

@@ -6,3 +6,15 @@
   color: #000000;
   background-color: #ffffff;
 }
+
+.page-header__wrapper {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+  }
+}

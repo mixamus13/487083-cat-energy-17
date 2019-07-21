@@ -6,4 +6,5 @@
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
+  @include list-reset;
 }

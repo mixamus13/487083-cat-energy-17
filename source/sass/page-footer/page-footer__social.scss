@@ -1,8 +1,7 @@
 .social__list {
   display: flex;
   justify-content: space-around;
-  margin: 0;
-  padding: 0;
+  @include list-reset;
   margin-bottom: 52px;
 }
 

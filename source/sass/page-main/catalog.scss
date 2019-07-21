@@ -8,8 +8,9 @@
 }
 
 .catalog__list {
-  padding: 0;
-  margin: 0;
+  @include list-reset;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .catalog__item {
@@ -45,7 +46,7 @@
   font-weight: 400;
   line-height: 20px;
   color: #ffffff;
-  background-color: #68b738;
+  background-color: $color-green;
   text-transform: uppercase;
   padding: 13px 110px;
   text-decoration: none;
