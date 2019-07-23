@@ -1,5 +1,4 @@
 .catalog__product {
-  font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -18,7 +17,6 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -33,7 +31,7 @@
 .catalog__volume,
 .catalog__taste,
 .catalog__price {
-  font-family: "ArialMT", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -41,7 +39,6 @@
 }
 
 .catalog-link {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

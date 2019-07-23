@@ -1,5 +1,4 @@
 .program-cat {
-  font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -13,7 +12,6 @@
 }
 
 .program-cat__title {
-  font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -21,7 +19,7 @@
 }
 
 .program-cat__description {
-  font-family: "ArialMT", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -35,7 +33,6 @@
 
 .program-cat__slim,
 .program-cat__pro {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;

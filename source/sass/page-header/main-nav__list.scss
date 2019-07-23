@@ -9,3 +9,10 @@
   color: #000000;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+}
