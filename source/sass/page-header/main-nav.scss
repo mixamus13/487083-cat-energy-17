@@ -7,3 +7,22 @@
   background-color: #ffffff;
   @include list-reset;
 }
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include list-reset;
+}
+
+.site-list__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+}

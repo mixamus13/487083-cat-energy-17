@@ -10,3 +10,14 @@
   width: 280px;
   margin: 0 auto;
 }
+
+.social__list {
+  display: flex;
+  justify-content: space-around;
+  @include list-reset;
+  margin-bottom: 52px;
+}
+
+.social__item {
+  list-style: none;
+}
