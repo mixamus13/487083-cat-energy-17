@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Maksim Dokuchaev](https://up.htmlacademy.ru/adaptive/17/user/487083).
-* Наставник: [Max Pushkarev](https://htmlacademy.ru/profile/id87167).
+* Наставник: [Viktoria Kovalenko](https://htmlacademy.ru/profile/id42638).
 
 ---
 
