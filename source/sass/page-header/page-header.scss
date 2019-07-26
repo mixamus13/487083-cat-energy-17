@@ -8,7 +8,6 @@
 
 .page-header__wrapper {
   display: flex;
-  width: 280px;
   margin: 0 auto;
 }
 
@@ -17,15 +16,27 @@
     display: flex;
   }
 
+  .page-header__logo {
+    margin-right: 70px;
+  }
+
   .main-nav__list {
     text-align: center;
   }
 
   .site-list__item:first-child {
-    margin-right: 38px;
+    margin-right: 28px;
   }
 
   .site-list__item:nth-child(2) {
-    margin-right: 38px;
+    margin-right: 28px;
+  }
+
+  .site-list__item:last-child {
+    margin-right: 20px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }

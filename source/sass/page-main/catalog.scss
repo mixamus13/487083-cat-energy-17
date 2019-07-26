@@ -8,7 +8,6 @@
 
 .catalog__list {
   @include list-reset;
-  width: 280px;
   margin: 0 auto;
 }
 
@@ -47,4 +46,27 @@
   text-transform: uppercase;
   padding: 13px 110px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__product {
+    font-size: 60px;
+    text-align: left;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 324px;
+    margin: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: 245px;
+  }
 }

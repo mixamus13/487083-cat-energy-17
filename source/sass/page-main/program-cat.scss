@@ -7,9 +7,7 @@
 
 .program-cat__list {
   @include list-reset;
-  width: 280px;
   margin: 0 auto;
-  background-color: #f2f2f2;
 }
 
 .program-cat__title {
@@ -30,6 +28,8 @@
 
 .program-cat__item {
   @include list-reset;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
 }
 
 .program-cat__slim,
@@ -38,4 +38,23 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .program-cat__list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-cat__list {
+    flex-direction: row;
+  }
+
+  .program-cat__item {
+    margin: 10px;
+    min-height: 372px;
+  }
 }

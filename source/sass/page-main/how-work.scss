@@ -1,16 +1,15 @@
 .how-work {
   @include list-reset;
-  width: 280px;
   margin: 0 auto;
 }
 
 .how-work__headline {
+  @include list-reset;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
   text-transform: initial;
   color: #111111;
-  @include list-reset;
 }
 
 .how-work__list {
@@ -28,4 +27,20 @@
   line-height: 18px;
   text-transform: initial;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .how-work__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .how-work__item {
+    width: 300px;
+  }
+
+  .how-work__headline {
+    font-size: 60px;
+  }
 }

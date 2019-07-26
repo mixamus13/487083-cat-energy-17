@@ -7,17 +7,30 @@
 }
 
 .page-footer__wrapper {
-  width: 280px;
+  //max-width: 280px;
   margin: 0 auto;
 }
 
 .social__list {
+  @include list-reset;
   display: flex;
   justify-content: space-around;
-  @include list-reset;
   margin-bottom: 52px;
 }
 
 .social__item {
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    min-height: 150px;
+    align-items: center;
+  }
+
+  .social__list {
+    margin-bottom: 10px;
+  }
 }

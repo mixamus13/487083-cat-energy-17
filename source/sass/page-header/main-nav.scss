@@ -1,18 +1,19 @@
 .main-nav {
+  @include list-reset;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
-  @include list-reset;
+  margin: 0 auto;
 }
 
 .main-nav__list {
+  @include list-reset;
   display: flex;
   flex-direction: column;
   text-align: center;
-  @include list-reset;
 }
 
 .site-list__link {
