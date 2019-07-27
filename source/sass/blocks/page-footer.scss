@@ -7,19 +7,7 @@
 }
 
 .page-footer__wrapper {
-  //max-width: 280px;
   margin: 0 auto;
-}
-
-.social__list {
-  @include list-reset;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 52px;
-}
-
-.social__item {
-  list-style: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,9 +16,5 @@
     justify-content: space-around;
     min-height: 150px;
     align-items: center;
-  }
-
-  .social__list {
-    margin-bottom: 10px;
   }
 }
