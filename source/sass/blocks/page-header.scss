@@ -10,33 +10,3 @@
   display: flex;
   margin: 0 auto;
 }
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    display: flex;
-  }
-
-  .page-header__logo {
-    margin-right: 70px;
-  }
-
-  .main-nav__list {
-    text-align: center;
-  }
-
-  .site-list__item:first-child {
-    margin-right: 28px;
-  }
-
-  .site-list__item:nth-child(2) {
-    margin-right: 28px;
-  }
-
-  .site-list__item:last-child {
-    margin-right: 20px;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-}

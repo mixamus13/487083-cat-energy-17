@@ -8,3 +8,17 @@
   background-color: #ffffff;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+  }
+
+  .main-nav__list {
+    text-align: center;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

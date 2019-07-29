@@ -63,10 +63,20 @@
     width: 324px;
     margin: 20px;
   }
+
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__item {
     width: 245px;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
   }
 }

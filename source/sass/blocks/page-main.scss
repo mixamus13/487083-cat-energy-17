@@ -1,0 +1,17 @@
+@media (min-width: $tablet-width) {
+  .page-main {
+    .container {
+      width: 768px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+}
