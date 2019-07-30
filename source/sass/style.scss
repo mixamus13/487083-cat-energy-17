@@ -1,8 +1,8 @@
-@import "base/typography.scss";
 @import "../sass/normalize";
+@import "../sass/variables";
 @import "abstracts/globalstyle";
 @import "abstracts/mixins";
-@import "../sass/variables";
+@import "base/typography.scss";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/page-main";
