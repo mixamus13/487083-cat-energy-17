@@ -1,11 +1,16 @@
 .social__list {
+  @include list-reset;
   display: flex;
   justify-content: space-around;
-  margin: 0;
-  padding: 0;
   margin-bottom: 52px;
 }
 
 .social__item {
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-bottom: 10px;
+  }
 }

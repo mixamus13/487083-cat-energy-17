@@ -1,8 +1,14 @@
 body {
+  font-family: "Oswald", "Arial", sans-serif;
+  min-width: 320px;
   padding: 0;
   margin: 0;
   color: #000000;
-  font-family: "Oswald", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -18,4 +24,23 @@ input[type="radio"].visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 769px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

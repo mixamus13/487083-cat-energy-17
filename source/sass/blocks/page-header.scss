@@ -1,8 +1,12 @@
 .page-header {
-  font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.page-header__wrapper {
+  display: flex;
+  margin: 0 auto;
 }

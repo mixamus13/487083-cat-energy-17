@@ -1,0 +1,22 @@
+.site-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.site-list__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .site-list__item {
+    margin-left: 37px;
+  }
+}

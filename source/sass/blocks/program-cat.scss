@@ -1,5 +1,4 @@
 .program-cat {
-  font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -7,36 +6,52 @@
 }
 
 .program-cat__list {
-  padding: 0;
-  margin: 0;
+  @include list-reset;
+  margin: 0 auto;
 }
 
 .program-cat__title {
-  font-family: "Oswald", sans-serif;
   font-size: 24px;
-  font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
 }
 
 .program-cat__description {
-  font-family: "ArialMT", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   color: #444444;
   text-transform: initial;
 }
 
 .program-cat__item {
-  list-style: none;
+  @include list-reset;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
 }
 
 .program-cat__slim,
 .program-cat__pro {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .program-cat__list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-cat__list {
+    flex-direction: row;
+  }
+
+  .program-cat__item {
+    margin: 10px;
+    min-height: 372px;
+  }
 }

@@ -1,5 +1,4 @@
 .catalog__product {
-  font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -8,8 +7,8 @@
 }
 
 .catalog__list {
-  padding: 0;
-  margin: 0;
+  @include list-reset;
+  margin: 0 auto;
 }
 
 .catalog__item {
@@ -17,9 +16,7 @@
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
@@ -32,21 +29,41 @@
 .catalog__volume,
 .catalog__taste,
 .catalog__price {
-  font-family: "ArialMT", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-size: 12px;
-  font-weight: 400;
   line-height: 16px;
   color: #444444;
 }
 
 .catalog-link {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: #ffffff;
-  background-color: #68b738;
+  background-color: $color-green;
   text-transform: uppercase;
   padding: 13px 110px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__product {
+    font-size: 60px;
+    text-align: left;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 324px;
+    margin: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: 245px;
+  }
 }

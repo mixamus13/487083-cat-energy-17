@@ -1,0 +1,24 @@
+.main-nav {
+  @include list-reset;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+  }
+
+  .main-nav__list {
+    text-align: center;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
