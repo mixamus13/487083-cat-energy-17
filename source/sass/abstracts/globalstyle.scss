@@ -11,11 +11,6 @@ img {
   height: auto;
 }
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -29,4 +24,19 @@ input[type="radio"].visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  width: 769px;
+  margin: 0 auto;
+}
+
+@media (min-width: $desktop-width) {
+  width: 1200px;
+  margin: 0 auto;
 }

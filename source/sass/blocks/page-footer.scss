@@ -17,16 +17,4 @@
     min-height: 150px;
     align-items: center;
   }
-
-  .container {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-  }
 }
