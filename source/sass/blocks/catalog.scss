@@ -17,7 +17,6 @@
 
 .catalog__title {
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
@@ -32,14 +31,12 @@
 .catalog__price {
   font-family: "ArialMT", "Arial", sans-serif;
   font-size: 12px;
-  font-weight: 400;
   line-height: 16px;
   color: #444444;
 }
 
 .catalog-link {
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: #ffffff;
   background-color: $color-green;

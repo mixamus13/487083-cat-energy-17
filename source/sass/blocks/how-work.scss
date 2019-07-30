@@ -16,14 +16,9 @@
   @include list-reset;
 }
 
-.how-work__item {
-  @include list-reset;
-}
-
 .how-work__description {
   font-family: "ArialMT", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   line-height: 18px;
   text-transform: initial;
   color: #444444;
