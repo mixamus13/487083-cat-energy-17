@@ -16,8 +16,10 @@
     margin-top: 10px;
   }
 
-  .site-list__item:first-child {
-    margin-right: 28px;
+  .site-list__item {
+    &:first-child {
+      margin-right: 28px;
+    }
 
     &:nth-child(2) {
       margin-right: 28px;
