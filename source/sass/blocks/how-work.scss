@@ -10,10 +10,12 @@
   line-height: 60px;
   text-transform: initial;
   color: #111111;
+  margin-left: 20px;
 }
 
 .how-work__list {
   @include list-reset;
+  position: relative;
 }
 
 .how-work__description {
@@ -22,6 +24,97 @@
   line-height: 18px;
   text-transform: initial;
   color: #444444;
+  margin-left: 100px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+}
+
+.how-work__item--leaf::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.how-work__item--leaf::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 24px;
+  width: 38px;
+  height: 40px;
+  background-image: url("../../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.how-work__item--water::before {
+  content: "";
+  position: absolute;
+  top: 83px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.how-work__item--water::after {
+  content: "";
+  position: absolute;
+  top: 87px;
+  left: 25px;
+  width: 40px;
+  height: 42px;
+  background-image: url("../../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.how-work__item--fork::before {
+  content: "";
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.how-work__item--fork::after {
+  content: "";
+  position: absolute;
+  top: 174px;
+  left: 25px;
+  width: 40px;
+  height: 42px;
+  background-image: url("../../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.how-work__item--clock::before {
+  content: "";
+  position: absolute;
+  top: 256px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.how-work__item--clock::after {
+  content: "";
+  position: absolute;
+  top: 261px;
+  left: 25px;
+  width: 40px;
+  height: 42px;
+  background-image: url("../../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 @media (min-width: $tablet-width) {
