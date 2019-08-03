@@ -3,7 +3,18 @@
   font-weight: 400;
   line-height: 60px;
   color: #111111;
-  text-align: center;
+  margin-left: 22px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.catalog__product::before {
+  content: "";
+  position: absolute;
+  width: 318px;
+  top: 95px;
+  left: -22px;
+  border: 1px solid #ededed;
 }
 
 .catalog__list {
@@ -13,6 +24,8 @@
 
 .catalog__item {
   list-style: none;
+  margin-left: 20px;
+  margin-bottom: 49px;
 }
 
 .catalog__title {
@@ -20,10 +33,168 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  margin-left: 137px;
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.catalog__title--chicken-small::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 144px;
+  top: -20px;
+  right: 163px;
+  background-image: url("../../img/chicken-small-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog__title--chicken-small::before {
+  content: "";
+  position: absolute;
+  width: 318px;
+  top: 198px;
+  left: -159px;
+  border: 1px solid #ededed;
+  z-index: 1;
+}
+
+.catalog__title--chicken-big::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 144px;
+  top: -20px;
+  right: 163px;
+  background-image: url("../../img/chicken-big-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog__title--chicken-big::before {
+  content: "";
+  position: absolute;
+  width: 318px;
+  top: 204px;
+  left: -159px;
+  border: 1px solid #ededed;
+  z-index: 1;
+}
+
+.catalog__title--fish-small::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 144px;
+  top: -20px;
+  right: 163px;
+  background-image: url("../../img/fish-small-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog__title--fish-small::before {
+  content: "";
+  position: absolute;
+  width: 318px;
+  top: 204px;
+  left: -159px;
+  border: 1px solid #ededed;
+  z-index: 1;
+}
+
+.catalog__title--fish-big::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 144px;
+  top: -20px;
+  right: 163px;
+  background-image: url("../../img/fish-big-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog__title--fish-big::before {
+  content: "";
+  position: absolute;
+  width: 318px;
+  top: 204px;
+  left: -159px;
+  border: 1px solid #ededed;
+  z-index: 1;
+}
+
+.catalog__title--buckwheat-small::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 144px;
+  top: -20px;
+  right: 163px;
+  background-image: url("../../img/buckwheat-small-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog__title--buckwheat-small::before {
+  content: "";
+  position: absolute;
+  width: 318px;
+  top: 204px;
+  left: -159px;
+  border: 1px solid #ededed;
+  z-index: 1;
+}
+
+.catalog__title--buckwheat-big::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 144px;
+  top: -20px;
+  right: 163px;
+  background-image: url("../../img/buckwheat-big-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog__title--buckwheat-big::before {
+  content: "";
+  position: absolute;
+  width: 318px;
+  top: 204px;
+  left: -159px;
+  border: 1px solid #ededed;
+  z-index: 1;
+}
+
+.catalog__title--rice-small::after {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 144px;
+  top: -20px;
+  right: 163px;
+  background-image: url("../../img/rice-small-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.catalog__title--rice-small::before {
+  content: "";
+  position: absolute;
+  width: 318px;
+  top: 204px;
+  left: -159px;
+  border: 1px solid #ededed;
+  z-index: 1;
 }
 
 .catalog__info {
   margin-bottom: 23px;
+  margin-left: 73px;
 }
 
 .catalog__volume,
@@ -32,7 +203,14 @@
   font-family: "ArialMT", "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 400;
   color: #444444;
+  width: 40px;
+  padding-left: 63px;
+}
+
+.catalog__price {
+  padding-bottom: 18px;
 }
 
 .catalog-link {
@@ -41,7 +219,7 @@
   color: #ffffff;
   background-color: $color-green;
   text-transform: uppercase;
-  padding: 13px 110px;
+  padding: 9px 110px;
   text-decoration: none;
 }
 

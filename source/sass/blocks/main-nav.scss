@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+//.main-nav__wrapper {
+//  display: none;
+//}
+
 .main-nav__toggle {
   position: absolute;
   top: -23px;
@@ -61,10 +65,6 @@
     &--active {
       display: block;
     }
-  }
-
-  .main-nav--closed .user-list__item {
-    display: none;
   }
 }
 
