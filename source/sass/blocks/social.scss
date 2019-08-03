@@ -1,12 +1,17 @@
 .social__list {
   @include list-reset;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 52px;
 }
 
 .social__item {
   list-style: none;
+
+  &:nth-child(2) {
+    margin-left: 37px;
+    margin-right: 40px;
+  }
 }
 
 @media (min-width: $tablet-width) {
