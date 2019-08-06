@@ -54,9 +54,7 @@
   background-color: $color-green;
   text-decoration: none;
   color: #ffffff;
-  width: 280px;
   padding: 14px 0 13px 0;
-  margin-left: 20px;
   display: block;
   text-align: center;
 }
@@ -68,9 +66,23 @@
 
   .function-cat__headline {
     font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    margin-left: 112px;
+    margin-right: 235px;
+    text-align: start;
   }
 
   .function-cat__slogan {
     font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    margin-left: 120px;
+    text-align: start;
+    margin-bottom: 48px;
+  }
+
+  .function-cat__button {
+    margin-left: 115px;
   }
 }

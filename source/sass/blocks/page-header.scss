@@ -6,15 +6,19 @@
   background-color: #ffffff;
 }
 
-.page-header__wrapper {
-  display: flex;
-  margin: 0 auto;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-}
+//.page-header__wrapper {
+//  display: flex;
+//  border-top: 1px solid #ededed;
+//  border-bottom: 1px solid #ededed;
+//}
 
 .page-header__logo {
   display: block;
   padding: 11px 11px;
-  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    margin-top: 27px;
+  }
 }

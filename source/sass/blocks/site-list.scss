@@ -7,8 +7,8 @@
   min-height: 216px;
 }
 
-.site-list a {
-  display: block;
+.site-list__link {
+  display: inline-block;
   padding: 25px 70px;
   font-size: 20px;
   line-height: 20px;
@@ -20,11 +20,18 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
+    display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 47px;
+    margin-right: 31px;
   }
 
   .site-list__item {
-    margin-left: 37px;
+    margin-left: 20px;
+  }
+
+  .site-list__link {
+    margin: 0;
+    padding: 0;
   }
 }

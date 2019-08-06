@@ -1,7 +1,6 @@
-.how-work {
-  @include list-reset;
-  margin: 0 auto;
-}
+//.how-work {
+//  @include list-reset;
+//}
 
 .how-work__headline {
   @include list-reset;
@@ -15,7 +14,6 @@
 
 .how-work__list {
   @include list-reset;
-  position: relative;
 }
 
 .how-work__description {
@@ -29,10 +27,14 @@
   margin-bottom: 32px;
 }
 
+.how-work__item--leaf {
+  position: relative;
+}
+
 .how-work__item--leaf::before {
   content: "";
   position: absolute;
-  top: -2px;
+  top: 1px;
   left: 20px;
   width: 60px;
   height: 60px;
@@ -42,8 +44,8 @@
 .how-work__item--leaf::after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 24px;
+  top: 6px;
+  left: 26px;
   width: 38px;
   height: 40px;
   background-image: url("../../img/advantage-leaf@1x.png");
@@ -51,10 +53,14 @@
   background-position: 0 0;
 }
 
+.how-work__item--water {
+  position: relative;
+}
+
 .how-work__item--water::before {
   content: "";
   position: absolute;
-  top: 83px;
+  top: 1px;
   left: 20px;
   width: 60px;
   height: 60px;
@@ -64,8 +70,8 @@
 .how-work__item--water::after {
   content: "";
   position: absolute;
-  top: 87px;
-  left: 25px;
+  top: 6px;
+  left: 26px;
   width: 40px;
   height: 42px;
   background-image: url("../../img/advantage-powder@1x.png");
@@ -73,10 +79,14 @@
   background-position: 0 0;
 }
 
+.how-work__item--fork {
+  position: relative;
+}
+
 .how-work__item--fork::before {
   content: "";
   position: absolute;
-  top: 170px;
+  top: 1px;
   left: 20px;
   width: 60px;
   height: 60px;
@@ -86,7 +96,7 @@
 .how-work__item--fork::after {
   content: "";
   position: absolute;
-  top: 174px;
+  top: 6px;
   left: 25px;
   width: 40px;
   height: 42px;
@@ -95,10 +105,14 @@
   background-position: 0 0;
 }
 
+.how-work__item--clock {
+  position: relative;
+}
+
 .how-work__item--clock::before {
   content: "";
   position: absolute;
-  top: 256px;
+  top: 1px;
   left: 20px;
   width: 60px;
   height: 60px;
@@ -108,7 +122,7 @@
 .how-work__item--clock::after {
   content: "";
   position: absolute;
-  top: 261px;
+  top: 6px;
   left: 25px;
   width: 40px;
   height: 42px;

@@ -29,18 +29,21 @@ input[type="radio"].visually-hidden {
 .container {
   width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 769px;
+    width: 768px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
+    padding: 0 20px;
   }
 }
