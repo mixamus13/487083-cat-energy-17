@@ -9,7 +9,7 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  margin-top: 107px;
+  margin-top: 74px;
   position: relative;
 }
 
@@ -19,7 +19,7 @@
   width: 31px;
   height: 31px;
   top: -50px;
-  right: 143px;
+  right: 125px;
   background-image: url("../../img/icon-plus-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -35,12 +35,13 @@
 }
 
 .page-else__button {
+  display: inline-block;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #444444;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 9px 95px;
+  padding: 13px 94px;
   background-color: #f2f2f2;
 }

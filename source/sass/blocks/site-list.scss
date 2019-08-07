@@ -7,13 +7,19 @@
   min-height: 216px;
 }
 
-.site-list__link {
-  display: inline-block;
-  padding: 25px 70px;
-  font-size: 20px;
-  line-height: 20px;
+.site-list__item {
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
+  margin: 0 -20px;
+  margin-bottom: -1px;
+  padding: 0 -20px;
+}
+
+.site-list__link {
+  display: inline-block;
+  padding: 25px 50px;
+  font-size: 20px;
+  line-height: 20px;
   color: #000000;
   text-decoration: none;
 }

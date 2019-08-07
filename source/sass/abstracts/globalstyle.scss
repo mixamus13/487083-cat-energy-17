@@ -30,6 +30,7 @@ input[type="radio"].visually-hidden {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,6 +38,7 @@ input[type="radio"].visually-hidden {
     width: 768px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
   }
 }
 
@@ -45,5 +47,6 @@ input[type="radio"].visually-hidden {
     width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
   }
 }

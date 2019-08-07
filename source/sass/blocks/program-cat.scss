@@ -74,7 +74,7 @@
   text-transform: uppercase;
   margin-top: 7px;
   margin-bottom: 36px;
-  margin-left: -30px;
+  margin-left: 15px;
 }
 
 .program-cat__title-pro {
@@ -85,7 +85,7 @@
   text-transform: uppercase;
   margin-top: 7px;
   margin-bottom: 36px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 .program-cat__description {
@@ -102,7 +102,7 @@
 .program-cat__item {
   @include list-reset;
   background-color: #f2f2f2;
-  padding: 22px 36px 22px 20px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
@@ -112,8 +112,6 @@
   line-height: 16px;
   text-transform: uppercase;
   margin-right: 153px;
-  text-align: start;
-  margin-bottom: 22px;
   position: relative;
 }
 
