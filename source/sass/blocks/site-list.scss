@@ -29,11 +29,12 @@
     display: flex;
     flex-direction: row;
     margin-top: 47px;
-    margin-right: 31px;
   }
 
   .site-list__item {
-    margin-left: 20px;
+    border-top: 0 solid #ededed;
+    border-bottom: 0 solid #ededed;
+    margin-left: 45px;
   }
 
   .site-list__link {

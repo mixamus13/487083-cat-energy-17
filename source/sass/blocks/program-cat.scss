@@ -146,34 +146,34 @@
     margin: 20px;
   }
 
-  .program-cat__item {
-    width: 708px;
-  }
-
   .program-cat__title-slim {
     font-size: 36px;
     line-height: 37px;
-    margin-left: -430px;
+    text-align: start;
+    margin-left: 35px;
   }
 
   .program-cat__title-pro {
     font-size: 36px;
     line-height: 37px;
-    margin-left: -430px;
+    text-align: start;
+    margin-left: 35px;
   }
 
   .program-cat__description {
     font-size: 16px;
     line-height: 24px;
     width: 344px;
-    margin-left: 67px;
+    margin-left: 35px;
+    border-bottom: 0;
   }
 
   .program-cat__slim,
   .program-cat__pro {
     font-size: 20px;
     line-height: 20px;
-    margin-left: -470px;
+    margin-left: -315px;
+    position: relative;
   }
 
   .program-cat__slim::after {
@@ -181,8 +181,8 @@
     position: absolute;
     width: 24px;
     height: 11px;
-    top: 260px;
-    right: 60px;
+    top: 10px;
+    margin-left: 25px;
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -193,24 +193,18 @@
     position: absolute;
     width: 24px;
     height: 11px;
-    bottom: 45px;
-    right: 60px;
+    top: 10px;
+    margin-left: 25px;
     background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   .program-cat__item--slenderize::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 23px;
-    width: 35px;
-    height: 49px;
-    background-image: url("../../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    z-index: 1;
+    top: 29px;
+    left: 465px;
+    width: 141px;
+    height: 194px;
   }
 
   .program-cat__item--slenderize::after {
@@ -223,15 +217,22 @@
     background-color: #68b738;
     border-radius: 100px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .program-cat__list {
-    flex-direction: row;
+  .program-cat__item--fatten::before {
+    top: 80px;
+    left: 400px;
+    width: 268px;
+    height: 113px;
   }
 
-  .program-cat__item {
-    margin: 10px;
-    min-height: 372px;
+  .program-cat__item--fatten::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 440px;
+    width: 200px;
+    height: 200px;
+    background-color: #68b738;
+    border-radius: 100px;
   }
 }

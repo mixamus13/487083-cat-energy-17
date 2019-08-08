@@ -69,21 +69,33 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-    margin-left: 112px;
-    margin-right: 235px;
+    margin-left: 97px;
     text-align: start;
+    width: 415px;
+    margin-top: 100px;
   }
 
   .function-cat__slogan {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-left: 120px;
+    margin-left: 103px;
     text-align: start;
     margin-bottom: 48px;
   }
 
   .function-cat__button {
-    margin-left: 115px;
+    @include list-reset;
+    font-size: 20px;
+    line-height: 20px;
+    width: 245px;
+    padding: 17px 29px 15px 26px;
+    margin-left: 103px;
+    margin-bottom: 529px;
+  }
+
+  .function-cat__can {
+    bottom: -234px;
+    left: 254px;
   }
 }

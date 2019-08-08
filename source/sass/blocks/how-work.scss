@@ -134,10 +134,15 @@
   }
 
   .how-work__item {
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 201px;
+    margin-right: 50px;
+    margin-bottom: 200px;
   }
 
   .how-work__headline {
     font-size: 60px;
+    margin-left: 18px;
   }
 }
