@@ -4,20 +4,27 @@
   line-height: 20px;
   color: #000000;
   margin-bottom: 20px;
-}
-
-.function-cat__image {
   position: relative;
-  top: -88px;
-  left: 0;
-  margin: 0 -20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 305px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #63a73a;
+    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
 }
 
 .function-cat__can {
   position: relative;
-  bottom: 210px;
-  left: 5px;
-  margin-bottom: -230px;
+  top: 80px;
+  left: 3px;
+  margin-bottom: 85px;
 }
 
 .function-cat__headline {
