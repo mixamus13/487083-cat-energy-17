@@ -11,10 +11,15 @@
   color: #444444;
   text-decoration: none;
   margin-bottom: 13px;
-  margin-left: 20px;
 }
 
 .copyright__logo {
-  margin-right: 20px;
   margin-top: -6px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    margin-bottom: 0;
+    margin-right: 21px;
+  }
 }

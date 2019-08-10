@@ -25,7 +25,7 @@
   position: relative;
   top: 80px;
   left: 3px;
-  margin-bottom: 85px;
+  margin-bottom: 80px;
 }
 
 .function-cat__headline {
@@ -60,6 +60,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 280px;
   background-color: $color-green;
   text-decoration: none;
   color: #ffffff;
@@ -69,6 +70,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .function-cat__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .function-cat__can {
+    top: 74px;
+    left: 12px;
+    margin-bottom: 55px;
+  }
+
   .function-cat__headline {
     font-size: 60px;
     line-height: 60px;
@@ -85,27 +97,19 @@
     color: #000000;
     margin-left: 103px;
     text-align: start;
-    margin-bottom: 400px;
-    position: relative;
-  }
-
-  .function-cat__slogan::before {
-    content: "";
-    position: absolute;
-    width: 709px;
-    height: 609px;
-    top: 10px;
-    left: 1px;
-    background-image: url("../../img/index-can-tablet@1x.jpg");
+    margin-bottom: 10px;
   }
 
   .function-cat__button {
     @include list-reset;
     font-size: 20px;
     line-height: 20px;
-    width: 245px;
-    padding: 17px 29px 15px 26px;
+    width: 205px;
+    padding: 17px 20px 15px 20px;
     margin-left: 103px;
+    order: -1;
+    margin-top: 350px;
+    position: absolute;
   }
 
   .function-cat::before {
