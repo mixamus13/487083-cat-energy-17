@@ -43,8 +43,8 @@
     position: absolute;
     top: 6px;
     left: 6px;
-    width: 38px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-image: url("../../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -144,5 +144,68 @@
   .how-work__headline {
     font-size: 60px;
     margin-left: 18px;
+  }
+
+  .how-work__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+
+  .how-work__item--leaf {
+    position: relative;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: 16px;
+      left: 16px;
+    }
+  }
+
+  .how-work__item--water {
+    position: relative;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: 16px;
+      left: 16px;
+    }
+  }
+
+  .how-work__item--fork {
+    position: relative;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: 16px;
+      left: 16px;
+    }
+  }
+
+  .how-work__item--clock {
+    position: relative;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: 16px;
+      left: 16px;
+    }
   }
 }
