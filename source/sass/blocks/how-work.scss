@@ -211,3 +211,70 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .how-work__list {
+    justify-content: start;
+  }
+
+  .how-work__item {
+    width: 245px;
+    margin-right: 0;
+  }
+
+  .how-work__headline {
+    margin-bottom: 83px;
+  }
+
+  .how-work__item--leaf {
+    margin-left: 35px;
+
+    &::before {
+      top: -12px;
+    }
+
+    &::after {
+      top: 3px;
+      left: 16px;
+    }
+  }
+
+  .how-work__item--water {
+    margin-left: 80px;
+
+    &::before {
+      top: -12px;
+    }
+
+    &::after {
+      top: 3px;
+      left: 16px;
+    }
+  }
+
+  .how-work__item--fork {
+    margin-left: 80px;
+
+    &::before {
+      top: -12px;
+    }
+
+    &::after {
+      top: 3px;
+      left: 16px;
+    }
+  }
+
+  .how-work__item--clock {
+    margin-left: 80px;
+
+    &::before {
+      top: -12px;
+    }
+
+    &::after {
+      top: 3px;
+      left: 16px;
+    }
+  }
+}
