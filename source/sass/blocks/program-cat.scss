@@ -7,13 +7,85 @@
 
 .program-cat__list {
   @include list-reset;
-  margin: 0 auto;
+  min-height: 266px;
 }
 
-.program-cat__title {
+.program-cat__item--slenderize {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    width: 35px;
+    height: 49px;
+    background-image: url("../../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50px;
+  }
+}
+
+.program-cat__item--fatten {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 13px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50px;
+  }
+}
+
+.program-cat__title-slim {
+  @include list-reset;
   font-size: 24px;
+  font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+  margin-top: 7px;
+  margin-bottom: 36px;
+  margin-left: 15px;
+}
+
+.program-cat__title-pro {
+  @include list-reset;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-top: 7px;
+  margin-bottom: 36px;
+  margin-left: 50px;
 }
 
 .program-cat__description {
@@ -22,11 +94,15 @@
   line-height: 18px;
   color: #444444;
   text-transform: initial;
+  text-align: start;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .program-cat__item {
   @include list-reset;
   background-color: #f2f2f2;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
@@ -35,6 +111,32 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin-right: 153px;
+  position: relative;
+}
+
+.program-cat__slim::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 12px;
+  top: 6px;
+  margin-left: 14px;
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.program-cat__pro::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 12px;
+  top: 6px;
+  margin-left: 14px;
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,15 +145,185 @@
     flex-direction: column;
     margin: 20px;
   }
+
+  .program-cat__title-slim {
+    font-size: 36px;
+    line-height: 37px;
+    text-align: start;
+    margin-left: 35px;
+  }
+
+  .program-cat__title-pro {
+    font-size: 36px;
+    line-height: 37px;
+    text-align: start;
+    margin-left: 35px;
+  }
+
+  .program-cat__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 344px;
+    margin-left: 35px;
+    border-bottom: 0;
+  }
+
+  .program-cat__slim,
+  .program-cat__pro {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: -315px;
+    position: relative;
+  }
+
+  .program-cat__slim::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    top: 10px;
+    margin-left: 25px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .program-cat__pro::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 11px;
+    top: 10px;
+    margin-left: 25px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .program-cat__item--slenderize::before {
+    top: 29px;
+    left: 465px;
+    width: 141px;
+    height: 194px;
+  }
+
+  .program-cat__item--slenderize::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 440px;
+    width: 200px;
+    height: 200px;
+    background-color: #68b738;
+    border-radius: 100px;
+  }
+
+  .program-cat__item--fatten::before {
+    top: 80px;
+    left: 400px;
+    width: 268px;
+    height: 113px;
+  }
+
+  .program-cat__item--fatten::after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 440px;
+    width: 200px;
+    height: 200px;
+    background-color: #68b738;
+    border-radius: 100px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .program-cat__list {
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 54px;
+  }
+
+  .program-cat__title-slim {
+    margin-left: 161px;
+    margin-top: 29px;
+    margin-bottom: 74px;
+  }
+
+  .program-cat__title-pro {
+    margin-left: 161px;
+    margin-top: 29px;
+    margin-bottom: 74px;
   }
 
   .program-cat__item {
-    margin: 10px;
-    min-height: 372px;
+    padding: 47px 56px 61px 52px;
+  }
+
+  .program-cat__description {
+    width: 462px;
+    margin: 0;
+    margin-bottom: 7px;
+  }
+
+  .program-cat__slim,
+  .program-cat__pro {
+    margin-left: -205px;
+  }
+
+  .program-cat__item--slenderize {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 41px;
+      left: 66px;
+      width: 71px;
+      height: 97px;
+      background-image: url("../../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 46px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+      background-color: #68b738;
+      border-radius: 50px;
+    }
+  }
+
+  .program-cat__item--fatten {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 69px;
+      left: 34px;
+      width: 134px;
+      height: 57px;
+      background-image: url("../../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+      background-color: #68b738;
+      border-radius: 50px;
+    }
   }
 }

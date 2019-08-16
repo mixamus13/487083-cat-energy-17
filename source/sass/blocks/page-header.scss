@@ -6,7 +6,25 @@
   background-color: #ffffff;
 }
 
-.page-header__wrapper {
-  display: flex;
-  margin: 0 auto;
+.page-header__logo {
+  display: block;
+  padding: 14px 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__logo {
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    margin-left: 10px;
+    margin-top: 43px;
+  }
 }

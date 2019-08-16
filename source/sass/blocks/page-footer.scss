@@ -6,15 +6,27 @@
   background-color: #f2f2f2;
 }
 
-.page-footer__wrapper {
-  margin: 0 auto;
+.page-footer__logo-image {
+  margin-top: 39px;
+  margin-left: 76px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-around;
-    min-height: 150px;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .page-footer {
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .page-footer__logo-image {
+    margin-top: 25px;
+    margin-left: 20px;
   }
 }
