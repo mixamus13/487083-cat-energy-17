@@ -313,7 +313,37 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__product {
+    margin-left: 19px;
+  }
+
   .catalog__item {
-    width: 245px;
+    width: 211px;
+    padding-left: 49px;
+    padding-right: 1px;
+  }
+
+  .catalog-link {
+    padding-left: 53px;
+    padding-right: 57px;
+    width: 169px;
+  }
+
+  .catalog__title {
+    padding-left: 18px;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    width: 130px;
+  }
+
+  .catalog__volume,
+  .catalog__taste,
+  .catalog__price {
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    &:last-child {
+      padding-left: 64px;
+    }
   }
 }

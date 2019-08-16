@@ -81,3 +81,23 @@
     margin-bottom: 126px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-else {
+    width: 221px;
+  }
+
+  .page-else__title {
+    margin-left: 44px;
+    margin-top: 163px;
+  }
+
+  .page-else__description {
+    margin-left: 25px;
+    margin-bottom: 84px;
+  }
+
+  .page-else__button {
+    padding: 13px 39px;
+  }
+}

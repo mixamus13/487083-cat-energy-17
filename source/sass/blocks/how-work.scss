@@ -24,6 +24,7 @@
   text-transform: initial;
   color: #444444;
   margin-left: 80px;
+  z-index: 2;
 }
 
 .how-work__item--leaf {
@@ -153,6 +154,7 @@
     line-height: 24px;
     margin-left: 0;
     margin-top: 100px;
+    z-index: 2;
   }
 
   .how-work__item--leaf {
@@ -208,6 +210,70 @@
     &::after {
       top: 16px;
       left: 16px;
+    }
+  }
+
+  .how-work__description--leaf {
+    position: relative;
+
+    &::before {
+      content: "1";
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: #f2f2f2;
+      width: 71px;
+      height: 228px;
+      top: -10px;
+      left: 121px;
+    }
+  }
+
+  .how-work__description--water {
+    position: relative;
+
+    &::before {
+      content: "2";
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: #f2f2f2;
+      width: 71px;
+      height: 228px;
+      top: -10px;
+      left: 121px;
+    }
+  }
+
+  .how-work__description--fork {
+    position: relative;
+
+    &::before {
+      content: "3";
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: #f2f2f2;
+      width: 71px;
+      height: 228px;
+      top: -10px;
+      left: 121px;
+    }
+  }
+
+  .how-work__description--clock {
+    position: relative;
+
+    &::before {
+      content: "4";
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: #f2f2f2;
+      width: 71px;
+      height: 228px;
+      top: -10px;
+      left: 121px;
     }
   }
 }
@@ -275,6 +341,71 @@
     &::after {
       top: 3px;
       left: 16px;
+    }
+  }
+
+  .how-work__description--leaf {
+    position: relative;
+
+
+    &::before {
+      content: "1";
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: #f2f2f2;
+      width: 71px;
+      height: 228px;
+      top: -23px;
+      left: 121px;
+    }
+  }
+
+  .how-work__description--water {
+    position: relative;
+
+    &::before {
+      content: "2";
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: #f2f2f2;
+      width: 71px;
+      height: 228px;
+      top: -23px;
+      left: 121px;
+    }
+  }
+
+  .how-work__description--fork {
+    position: relative;
+
+    &::before {
+      content: "3";
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: #f2f2f2;
+      width: 71px;
+      height: 228px;
+      top: -23px;
+      left: 121px;
+    }
+  }
+
+  .how-work__description--clock {
+    position: relative;
+
+    &::before {
+      content: "4";
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: #f2f2f2;
+      width: 71px;
+      height: 228px;
+      top: -23px;
+      left: 121px;
     }
   }
 }
