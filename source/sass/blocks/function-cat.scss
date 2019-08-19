@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     background-color: #63a73a;
-    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
   }
@@ -128,6 +128,9 @@
 
   .function-cat__headline {
     position: relative;
+    margin-left: 98px;
+    margin-top: 68px;
+    margin-bottom: 15px;
 
     &::before {
       content: "";
@@ -136,17 +139,11 @@
       height: 696px;
       top: -222px;
       left: 527px;
-      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 1;
     }
-  }
-
-  .function-cat__headline {
-    margin-left: 98px;
-    margin-top: 68px;
-    margin-bottom: 15px;
   }
 
   .function-cat__slogan {

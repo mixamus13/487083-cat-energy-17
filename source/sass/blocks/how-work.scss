@@ -33,20 +33,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 1px;
+    top: 0;
+    left: 0;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 50px;
-    height: 50px;
-    background-image: url("../../img/advantage-leaf@1x.png");
+    background-image: url("../img/leaf-mobile.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -58,20 +49,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 1px;
+    top: 0;
+    left: 0;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 40px;
-    height: 42px;
-    background-image: url("../../img/advantage-powder@1x.png");
+    background-image: url("../img/water-mobile.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -83,20 +65,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 1px;
+    top: 0;
+    left: 0;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 5px;
-    width: 40px;
-    height: 42px;
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../img/fork-mobile.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -108,20 +81,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 1px;
+    top: 0;
+    left: 0;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 5px;
-    width: 40px;
-    height: 42px;
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../img/clock-mobile.png");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -133,6 +97,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin-left: -17px;
+    counter-reset: list1;
   }
 
   .how-work__item {
@@ -163,11 +128,17 @@
     &::before {
       width: 80px;
       height: 80px;
+      background-image: url("../img/leaf.png");
     }
 
     &::after {
-      top: 16px;
-      left: 16px;
+      counter-increment: list1;
+      content: counter(list1);
+      position: absolute;
+      font-size: 281px;
+      top: -108px;
+      left: 119px;
+      color: #f2f2f2;
     }
   }
 
@@ -177,11 +148,17 @@
     &::before {
       width: 80px;
       height: 80px;
+      background-image: url("../img/water.png");
     }
 
     &::after {
-      top: 16px;
-      left: 16px;
+      counter-increment: list1;
+      content: counter(list1);
+      position: absolute;
+      font-size: 281px;
+      top: -108px;
+      left: 119px;
+      color: #f2f2f2;
     }
   }
 
@@ -191,11 +168,17 @@
     &::before {
       width: 80px;
       height: 80px;
+      background-image: url("../img/fork.png");
     }
 
     &::after {
-      top: 16px;
-      left: 16px;
+      counter-increment: list1;
+      content: counter(list1);
+      position: absolute;
+      font-size: 281px;
+      top: -108px;
+      left: 119px;
+      color: #f2f2f2;
     }
   }
 
@@ -205,75 +188,17 @@
     &::before {
       width: 80px;
       height: 80px;
+      background-image: url("../img/clock.png");
     }
 
     &::after {
-      top: 16px;
-      left: 16px;
-    }
-  }
-
-  .how-work__description--leaf {
-    position: relative;
-
-    &::before {
-      content: "1";
+      counter-increment: list1;
+      content: counter(list1);
       position: absolute;
-      font-family: "Oswald", "Arial", sans-serif;
       font-size: 281px;
+      top: -108px;
+      left: 119px;
       color: #f2f2f2;
-      width: 71px;
-      height: 228px;
-      top: -10px;
-      left: 121px;
-    }
-  }
-
-  .how-work__description--water {
-    position: relative;
-
-    &::before {
-      content: "2";
-      position: absolute;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 281px;
-      color: #f2f2f2;
-      width: 71px;
-      height: 228px;
-      top: -10px;
-      left: 121px;
-    }
-  }
-
-  .how-work__description--fork {
-    position: relative;
-
-    &::before {
-      content: "3";
-      position: absolute;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 281px;
-      color: #f2f2f2;
-      width: 71px;
-      height: 228px;
-      top: -10px;
-      left: 121px;
-    }
-  }
-
-  .how-work__description--clock {
-    position: relative;
-
-    &::before {
-      content: "4";
-      position: absolute;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 281px;
-      color: #f2f2f2;
-      width: 71px;
-      height: 228px;
-      top: -10px;
-      left: 121px;
     }
   }
 }
@@ -298,11 +223,6 @@
     &::before {
       top: -12px;
     }
-
-    &::after {
-      top: 3px;
-      left: 16px;
-    }
   }
 
   .how-work__item--water {
@@ -310,11 +230,6 @@
 
     &::before {
       top: -12px;
-    }
-
-    &::after {
-      top: 3px;
-      left: 16px;
     }
   }
 
@@ -324,11 +239,6 @@
     &::before {
       top: -12px;
     }
-
-    &::after {
-      top: 3px;
-      left: 16px;
-    }
   }
 
   .how-work__item--clock {
@@ -336,76 +246,6 @@
 
     &::before {
       top: -12px;
-    }
-
-    &::after {
-      top: 3px;
-      left: 16px;
-    }
-  }
-
-  .how-work__description--leaf {
-    position: relative;
-
-
-    &::before {
-      content: "1";
-      position: absolute;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 281px;
-      color: #f2f2f2;
-      width: 71px;
-      height: 228px;
-      top: -23px;
-      left: 121px;
-    }
-  }
-
-  .how-work__description--water {
-    position: relative;
-
-    &::before {
-      content: "2";
-      position: absolute;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 281px;
-      color: #f2f2f2;
-      width: 71px;
-      height: 228px;
-      top: -23px;
-      left: 121px;
-    }
-  }
-
-  .how-work__description--fork {
-    position: relative;
-
-    &::before {
-      content: "3";
-      position: absolute;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 281px;
-      color: #f2f2f2;
-      width: 71px;
-      height: 228px;
-      top: -23px;
-      left: 121px;
-    }
-  }
-
-  .how-work__description--clock {
-    position: relative;
-
-    &::before {
-      content: "4";
-      position: absolute;
-      font-family: "Oswald", "Arial", sans-serif;
-      font-size: 281px;
-      color: #f2f2f2;
-      width: 71px;
-      height: 228px;
-      top: -23px;
-      left: 121px;
     }
   }
 }
