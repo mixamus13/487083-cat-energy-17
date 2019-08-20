@@ -48,17 +48,24 @@
 
 @media (min-width: $tablet-width) {
   .page-else {
-    padding: 0 20px;
     border: 1px solid #dfdfdf;
-    margin-bottom: 93px;
-    margin-top: 50px;
+    margin-bottom: 84px;
+    margin-top: 55px;
+    box-sizing: border-box;
+    padding-left: 39px;
+    padding-right: 39px;
+    width: 324px;
+  }
+
+  .page-else__button {
+    padding: 9px 76px;
   }
 
   .page-else__title {
     font-size: 20px;
-    margin-top: 166px;
-    margin-left: 75px;
-    margin-bottom: 28px;
+    margin-top: 163px;
+    margin-left: 57px;
+    margin-bottom: 27px;
     width: 135px;
     text-align: center;
 
@@ -66,8 +73,8 @@
     &::after {
       width: 61px;
       height: 61px;
-      top: -114px;
-      right: 39px;
+      top: -109px;
+      right: 37px;
       background-image: url("../img/icon-plus.svg");
       opacity: 0.2;
     }
@@ -75,16 +82,18 @@
 
   .page-else__description {
     font-size: 16px;
+    line-height: normal;
     color: #444444;
     width: 170px;
-    margin-left: 55px;
-    margin-bottom: 126px;
+    margin-left: 38px;
+    margin-bottom: 86px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-else {
-    width: 221px;
+    box-sizing: border-box;
+    width: 245px;
   }
 
   .page-else__title {

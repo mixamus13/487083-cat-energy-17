@@ -31,6 +31,32 @@
   padding-left: 136px;
 }
 
+.catalog__description-type {
+  width: 100%;
+}
+
+.catalog__volume,
+.catalog__taste,
+.catalog__price {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+
+  &:first-child {
+    text-align: left;
+    padding-left: 64px;
+    width: 50%;
+  }
+
+  &:last-child {
+    text-align: right;
+    padding-left: 39px;
+    width: 50%;
+  }
+}
+
 .catalog__info {
   margin-bottom: 23px;
   margin-left: 73px;
@@ -148,21 +174,9 @@
   }
 }
 
-.catalog__volume,
-.catalog__taste,
-.catalog__price {
-  font-family: "ArialMT", "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #444444;
-  width: 40px;
-  padding-left: 63px;
-}
-
-.catalog__price {
-  padding-bottom: 18px;
-}
+//.catalog__price {
+//  padding-bottom: 18px;
+//}
 
 .catalog-link {
   font-size: 16px;
@@ -177,23 +191,28 @@
 @media (min-width: $tablet-width) {
   .catalog__item {
     background-color: #f2f2f2;
-    margin-bottom: 95px;
-    margin-top: 50px;
-    padding-top: 120px;
-    padding-bottom: 45px;
+    margin-bottom: 85px;
+    margin-top: 54px;
+    padding-top: 115px;
+    padding-bottom: 46px;
+    padding-left: 39px;
+    padding-right: 39px;
+    width: 327px;
+    box-sizing: border-box;
   }
 
   .catalog__info {
-    margin-left: 0;
+    width: 100%;
     margin-bottom: 43px;
+    margin-left: 0;
   }
 
   .catalog__product {
     font-size: 60px;
     text-align: left;
-    margin-top: 60px;
+    margin-top: 39px;
     margin-bottom: 75px;
-    margin-left: 14px;
+    margin-left: 11px;
     border-bottom: none;
   }
 
@@ -205,26 +224,46 @@
 
   .catalog__title {
     font-size: 20px;
-    width: 127px;
+    width: 130px;
     text-align: center;
-    padding-left: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 26px;
   }
 
   .catalog__volume,
   .catalog__taste,
   .catalog__price {
     font-size: 16px;
-    width: 55px;
     padding-left: 0;
     border-bottom: 1px solid #d6d6d6;
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+    &:first-child {
+      text-align: left;
+      padding-left: 0;
+      width: 50%;
+    }
 
     &:last-child {
-      padding-left: 170px;
+      text-align: right;
+      padding-left: 0;
+      width: 50%;
     }
+  }
+
+  .catalog__volume {
+    padding-bottom: 7px;
+  }
+
+  .catalog__taste {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  .catalog__price {
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   .catalog__title--chicken-small {
@@ -233,8 +272,8 @@
     &::after {
       width: 227px;
       height: 172px;
-      top: -215px;
-      right: 1px;
+      top: -210px;
+      right: 60px;
       background-image: url("../img/chicken-small-tablet@1x.png");
     }
   }
@@ -245,8 +284,8 @@
     &::after {
       width: 280px;
       height: 194px;
-      top: -253px;
-      right: -47px;
+      top: -246px;
+      right: 8px;
       background-image: url("../img/chicken-big-tablet@1x.png");
     }
   }
@@ -257,8 +296,8 @@
     &::after {
       width: 227px;
       height: 172px;
-      top: -215px;
-      right: 1px;
+      top: -210px;
+      right: 60px;
       background-image: url("../img/fish-small-tablet@1x.png");
     }
   }
@@ -269,8 +308,8 @@
     &::after {
       width: 280px;
       height: 194px;
-      top: -253px;
-      right: -47px;
+      top: -246px;
+      right: 8px;
       background-image: url("../img/fish-big-tablet@1x.png");
     }
   }
@@ -281,8 +320,8 @@
     &::after {
       width: 227px;
       height: 172px;
-      top: -215px;
-      right: 1px;
+      top: -210px;
+      right: 60px;
       background-image: url("../img/buckwheat-small-tablet@1x.png");
     }
   }
@@ -293,8 +332,8 @@
     &::after {
       width: 280px;
       height: 194px;
-      top: -253px;
-      right: -47px;
+      top: -246px;
+      right: 8px;
       background-image: url("../img/buckwheat-big-tablet@1x.png");
     }
   }
@@ -305,35 +344,41 @@
     &::after {
       width: 227px;
       height: 172px;
-      top: -215px;
-      right: 1px;
+      top: -210px;
+      right: 60px;
       background-image: url("../img/rice-small-tablet@1x.png");
     }
+  }
+
+  .catalog-link {
+    padding: 8px 95px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__product {
-    margin-left: 19px;
+    margin-top: 56px;
+    margin-left: 22px;
+    margin-bottom: 84px;
   }
 
   .catalog__item {
-    width: 211px;
-    padding-left: 49px;
-    padding-right: 1px;
+    width: 261px;
+    padding-left: 39px;
+    padding-right: 39px;
+    box-sizing: border-box;
   }
 
   .catalog-link {
-    padding-left: 53px;
-    padding-right: 57px;
-    width: 169px;
+    padding: 9px 61px;
   }
 
   .catalog__title {
-    padding-left: 18px;
+    //padding-left: 32px;
     margin-top: 48px;
     margin-bottom: 16px;
-    width: 130px;
+    padding-left: 0;
+    //width: 130px;
   }
 
   .catalog__volume,
@@ -342,8 +387,14 @@
     padding-top: 10px;
     padding-bottom: 5px;
 
+    &:first-child {
+      text-align: left;
+      width: 50%;
+    }
+
     &:last-child {
-      padding-left: 64px;
+      text-align: right;
+      width: 50%;
     }
   }
 }
