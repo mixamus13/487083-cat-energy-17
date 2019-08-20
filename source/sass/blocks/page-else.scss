@@ -9,7 +9,8 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  margin-top: 74px;
+  margin-top: 82px;
+  margin-bottom: 9px;
   position: relative;
 
   &::after {
@@ -31,7 +32,8 @@
   font-weight: 400;
   line-height: 16px;
   color: #444444;
-  margin-bottom: 22px;
+  margin: 0;
+  margin-bottom: 18px;
 }
 
 .page-else__button {
@@ -104,6 +106,7 @@
   .page-else__title {
     margin-left: 17px;
     margin-top: 164px;
+    margin-bottom: 27px;
   }
 
   .page-else__description {

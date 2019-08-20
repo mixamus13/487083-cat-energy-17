@@ -5,9 +5,10 @@
   color: #111111;
   border-bottom: 1px solid #eaeaea;
   margin: 0 -20px;
-  margin-left: 0;
-  padding-bottom: 35px;
-  margin-bottom: 22px;
+  padding-bottom: 29px;
+  margin-bottom: -4px;
+  margin-left: -20px;
+  padding-left: 20px;
 }
 
 .catalog__list {
@@ -19,7 +20,7 @@
   list-style: none;
   padding: 0 20px;
   border-bottom: 1px solid #eaeaea;
-  padding-bottom: 36px;
+  padding-bottom: 26px;
 }
 
 .catalog__title {
@@ -28,7 +29,10 @@
   color: #111111;
   text-transform: uppercase;
   width: 75px;
-  padding-left: 136px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 12px;
+  padding-left: 140px;
 }
 
 .catalog__description-type {
@@ -46,7 +50,7 @@
 
   &:first-child {
     text-align: left;
-    padding-left: 64px;
+    padding-left: 67px;
     width: 50%;
   }
 
@@ -58,7 +62,7 @@
 }
 
 .catalog__info {
-  margin-bottom: 23px;
+  margin-bottom: 33px;
   margin-left: 73px;
 }
 
@@ -70,7 +74,7 @@
     position: absolute;
     width: 140px;
     height: 144px;
-    top: -16px;
+    top: 5px;
     right: 75px;
     background-image: url("../img/chicken-small-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -86,7 +90,7 @@
     position: absolute;
     width: 140px;
     height: 144px;
-    top: -16px;
+    top: 5px;
     right: 75px;
     background-image: url("../img/chicken-big-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -102,7 +106,7 @@
     position: absolute;
     width: 140px;
     height: 144px;
-    top: -16px;
+    top: 5px;
     right: 75px;
     background-image: url("../img/fish-small-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -118,7 +122,7 @@
     position: absolute;
     width: 140px;
     height: 144px;
-    top: -16px;
+    top: 5px;
     right: 75px;
     background-image: url("../img/fish-big-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -134,7 +138,7 @@
     position: absolute;
     width: 140px;
     height: 144px;
-    top: -16px;
+    top: 5px;
     right: 75px;
     background-image: url("../img/buckwheat-small-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -150,7 +154,7 @@
     position: absolute;
     width: 140px;
     height: 144px;
-    top: -16px;
+    top: 5px;
     right: 75px;
     background-image: url("../img/buckwheat-big-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -166,7 +170,7 @@
     position: absolute;
     width: 140px;
     height: 144px;
-    top: -16px;
+    top: 5px;
     right: 75px;
     background-image: url("../img/rice-small-mobile@1x.jpg");
     background-repeat: no-repeat;
@@ -180,7 +184,7 @@
   color: #ffffff;
   background-color: $color-green;
   text-transform: uppercase;
-  padding: 9px 110px;
+  padding: 8px 110px;
   text-decoration: none;
 }
 
@@ -210,6 +214,7 @@
     margin-bottom: 75px;
     margin-left: 11px;
     border-bottom: none;
+    padding-bottom: 34px;
   }
 
   .catalog__list {
@@ -226,6 +231,8 @@
     padding-right: 60px;
     margin-top: 50px;
     margin-bottom: 26px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .catalog__volume,
