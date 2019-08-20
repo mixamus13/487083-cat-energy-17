@@ -174,10 +174,6 @@
   }
 }
 
-//.catalog__price {
-//  padding-bottom: 18px;
-//}
-
 .catalog-link {
   font-size: 16px;
   line-height: 20px;
@@ -359,26 +355,35 @@
   .catalog__product {
     margin-top: 56px;
     margin-left: 22px;
-    margin-bottom: 84px;
+    margin-bottom: 76px;
+  }
+
+  .catalog__info {
+    margin-bottom: 40px;
   }
 
   .catalog__item {
-    width: 261px;
+    margin-bottom: 85px;
+    margin-top: 56px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 115px;
+    padding-bottom: 46px;
     padding-left: 39px;
     padding-right: 39px;
+    width: 247px;
     box-sizing: border-box;
   }
 
   .catalog-link {
-    padding: 9px 61px;
+    padding: 8px 54px;
   }
 
   .catalog__title {
-    //padding-left: 32px;
+    padding-right: 62px;
     margin-top: 48px;
     margin-bottom: 16px;
-    padding-left: 0;
-    //width: 130px;
+    padding-left: 22px;
   }
 
   .catalog__volume,
@@ -396,5 +401,19 @@
       text-align: right;
       width: 50%;
     }
+  }
+
+  .catalog__volume {
+    padding-bottom: 8px;
+  }
+
+  .catalog__taste {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  .catalog__price {
+    padding-top: 7px;
+    padding-bottom: 9px;
   }
 }

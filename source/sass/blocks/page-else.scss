@@ -94,19 +94,24 @@
   .page-else {
     box-sizing: border-box;
     width: 245px;
+    margin-bottom: 83px;
+    margin-top: 56px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 17px;
   }
 
   .page-else__title {
-    margin-left: 44px;
-    margin-top: 163px;
+    margin-left: 17px;
+    margin-top: 164px;
   }
 
   .page-else__description {
-    margin-left: 25px;
-    margin-bottom: 84px;
+    margin-left: -2px;
+    margin-bottom: 83px;
   }
 
   .page-else__button {
-    padding: 13px 39px;
+    padding: 11px 37px;
   }
 }
