@@ -154,33 +154,59 @@
     margin: 20px;
   }
 
+  .program-cat__item {
+    padding: 81px 62px 59px 53px;
+
+    &:first-child {
+      margin-bottom: 32px;
+      margin-left: -9px;
+      margin-right: -9px;
+    }
+
+    &:last-child {
+      margin-bottom: 27px;
+      margin-left: -9px;
+      margin-right: -9px;
+    }
+  }
+
   .program-cat__title-slim {
     font-size: 36px;
     line-height: 37px;
     text-align: start;
-    margin-left: 35px;
+    margin: 0;
+    margin-left: 1px;
+    margin-top: -5px;
+    margin-bottom: 24px;
   }
 
   .program-cat__title-pro {
     font-size: 36px;
     line-height: 37px;
     text-align: start;
-    margin-left: 35px;
+    margin-left: 1px;
+    margin-top: -5px;
+    margin-bottom: 24px;
   }
 
   .program-cat__description {
     font-size: 16px;
     line-height: 24px;
-    width: 344px;
-    margin-left: 35px;
+    margin-left: 1px;
+    margin-bottom: 33px;
     border-bottom: 0;
+    width: 372px;
+  }
+
+  .program-cat__description--width {
+    width: 342px;
   }
 
   .program-cat__slim,
   .program-cat__pro {
     font-size: 20px;
     line-height: 20px;
-    margin-left: -315px;
+    margin-left: -332px;
     position: relative;
   }
 
@@ -209,8 +235,8 @@
   }
 
   .program-cat__item--slenderize::before {
-    top: 29px;
-    left: 465px;
+    top: 79px;
+    left: 477px;
     width: 141px;
     height: 194px;
   }
@@ -218,8 +244,8 @@
   .program-cat__item--slenderize::after {
     content: "";
     position: absolute;
-    top: 45px;
-    left: 440px;
+    top: 91px;
+    left: 447px;
     width: 200px;
     height: 200px;
     background-color: #68b738;
@@ -227,8 +253,8 @@
   }
 
   .program-cat__item--fatten::before {
-    top: 80px;
-    left: 400px;
+    top: 134px;
+    left: 413px;
     width: 268px;
     height: 113px;
   }
@@ -236,8 +262,8 @@
   .program-cat__item--fatten::after {
     content: "";
     position: absolute;
-    top: 45px;
-    left: 440px;
+    top: 89px;
+    left: 449px;
     width: 200px;
     height: 200px;
     background-color: #68b738;
