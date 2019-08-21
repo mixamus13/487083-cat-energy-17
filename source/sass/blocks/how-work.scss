@@ -5,7 +5,7 @@
   line-height: 60px;
   text-transform: initial;
   color: #111111;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .how-work__list {
@@ -29,6 +29,7 @@
 
 .how-work__item--leaf {
   position: relative;
+  margin-bottom: 26px;
 
   &::before {
     content: "";
@@ -45,6 +46,7 @@
 
 .how-work__item--water {
   position: relative;
+  margin-bottom: 26px;
 
   &::before {
     content: "";
@@ -61,6 +63,7 @@
 
 .how-work__item--fork {
   position: relative;
+  margin-bottom: 26px;
 
   &::before {
     content: "";
