@@ -275,23 +275,34 @@
   .program-cat__list {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 54px;
+    margin-bottom: 40px;
+    margin-top: 32px;
   }
 
   .program-cat__title-slim {
-    margin-left: 161px;
-    margin-top: 29px;
+    margin-left: 162px;
+    margin-top: 10px;
     margin-bottom: 74px;
   }
 
   .program-cat__title-pro {
-    margin-left: 161px;
-    margin-top: 29px;
+    margin-left: 163px;
+    margin-top: 9px;
     margin-bottom: 74px;
   }
 
   .program-cat__item {
-    padding: 47px 56px 61px 52px;
+    padding: 70px 56px 62px 53px;
+
+    &:first-child {
+      margin-left: 0;
+      margin-bottom: 34px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 34px;
+    }
   }
 
   .program-cat__description {
@@ -311,7 +322,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 41px;
+      top: 44px;
       left: 66px;
       width: 71px;
       height: 97px;
@@ -324,7 +335,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 46px;
+      top: 49px;
       left: 52px;
       width: 100px;
       height: 100px;
@@ -339,7 +350,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 69px;
+      top: 71px;
       left: 34px;
       width: 134px;
       height: 57px;
@@ -352,7 +363,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 47px;
+      top: 50px;
       left: 52px;
       width: 100px;
       height: 100px;
