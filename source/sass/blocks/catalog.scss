@@ -416,7 +416,7 @@
       right: 60px;
       background-image: url("../img/rice-small-tablet@1x.png");
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/rice-small-tablet@2x.png");
         background-size: 324px auto;
       }
@@ -585,7 +585,7 @@
       right: 24px;
       background-image: url("../img/rice-small-desktop@1x.png");
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/rice-small-desktop@2x.png");
         background-size: 245px auto;
       }
