@@ -20,7 +20,7 @@
     left: 30px;
     width: 35px;
     height: 49px;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     z-index: 1;
@@ -48,7 +48,7 @@
     left: 13px;
     width: 67px;
     height: 28px;
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     z-index: 1;
@@ -72,8 +72,8 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
-  margin-top: 7px;
-  margin-bottom: 36px;
+  margin-top: 10px;
+  margin-bottom: 28px;
   margin-left: 15px;
 }
 
@@ -83,9 +83,9 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
-  margin-top: 7px;
-  margin-bottom: 36px;
-  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 28px;
+  margin-left: 42px;
 }
 
 .program-cat__description {
@@ -96,6 +96,7 @@
   text-transform: initial;
   text-align: start;
   padding-bottom: 23px;
+  margin-bottom: 19px;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -103,7 +104,14 @@
   @include list-reset;
   background-color: #f2f2f2;
   padding: 20px;
-  margin-bottom: 20px;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+
+  &:last-child {
+    margin-bottom: 18px;
+  }
 }
 
 .program-cat__slim,
@@ -121,8 +129,8 @@
   width: 25px;
   height: 12px;
   top: 6px;
-  margin-left: 14px;
-  background-image: url("../../img/icon-right-arrow-long.svg");
+  margin-left: 11px;
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -133,8 +141,8 @@
   width: 25px;
   height: 12px;
   top: 6px;
-  margin-left: 14px;
-  background-image: url("../../img/icon-right-arrow-long.svg");
+  margin-left: 11px;
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -146,33 +154,59 @@
     margin: 20px;
   }
 
+  .program-cat__item {
+    padding: 81px 62px 59px 53px;
+
+    &:first-child {
+      margin-bottom: 32px;
+      margin-left: -9px;
+      margin-right: -9px;
+    }
+
+    &:last-child {
+      margin-bottom: 27px;
+      margin-left: -9px;
+      margin-right: -9px;
+    }
+  }
+
   .program-cat__title-slim {
     font-size: 36px;
     line-height: 37px;
     text-align: start;
-    margin-left: 35px;
+    margin: 0;
+    margin-left: 1px;
+    margin-top: -5px;
+    margin-bottom: 24px;
   }
 
   .program-cat__title-pro {
     font-size: 36px;
     line-height: 37px;
     text-align: start;
-    margin-left: 35px;
+    margin-left: 1px;
+    margin-top: -5px;
+    margin-bottom: 24px;
   }
 
   .program-cat__description {
     font-size: 16px;
     line-height: 24px;
-    width: 344px;
-    margin-left: 35px;
+    margin-left: 1px;
+    margin-bottom: 33px;
     border-bottom: 0;
+    width: 372px;
+  }
+
+  .program-cat__description--width {
+    width: 342px;
   }
 
   .program-cat__slim,
   .program-cat__pro {
     font-size: 20px;
     line-height: 20px;
-    margin-left: -315px;
+    margin-left: -332px;
     position: relative;
   }
 
@@ -183,7 +217,7 @@
     height: 11px;
     top: 10px;
     margin-left: 25px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -195,14 +229,14 @@
     height: 11px;
     top: 10px;
     margin-left: 25px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
 
   .program-cat__item--slenderize::before {
-    top: 29px;
-    left: 465px;
+    top: 79px;
+    left: 477px;
     width: 141px;
     height: 194px;
   }
@@ -210,8 +244,8 @@
   .program-cat__item--slenderize::after {
     content: "";
     position: absolute;
-    top: 45px;
-    left: 440px;
+    top: 91px;
+    left: 447px;
     width: 200px;
     height: 200px;
     background-color: #68b738;
@@ -219,8 +253,8 @@
   }
 
   .program-cat__item--fatten::before {
-    top: 80px;
-    left: 400px;
+    top: 134px;
+    left: 413px;
     width: 268px;
     height: 113px;
   }
@@ -228,8 +262,8 @@
   .program-cat__item--fatten::after {
     content: "";
     position: absolute;
-    top: 45px;
-    left: 440px;
+    top: 89px;
+    left: 449px;
     width: 200px;
     height: 200px;
     background-color: #68b738;
@@ -241,23 +275,34 @@
   .program-cat__list {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 54px;
+    margin-bottom: 40px;
+    margin-top: 32px;
   }
 
   .program-cat__title-slim {
-    margin-left: 161px;
-    margin-top: 29px;
+    margin-left: 162px;
+    margin-top: 10px;
     margin-bottom: 74px;
   }
 
   .program-cat__title-pro {
-    margin-left: 161px;
-    margin-top: 29px;
+    margin-left: 163px;
+    margin-top: 9px;
     margin-bottom: 74px;
   }
 
   .program-cat__item {
-    padding: 47px 56px 61px 52px;
+    padding: 70px 56px 62px 53px;
+
+    &:first-child {
+      margin-left: 0;
+      margin-bottom: 34px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 34px;
+    }
   }
 
   .program-cat__description {
@@ -277,11 +322,11 @@
     &::before {
       content: "";
       position: absolute;
-      top: 41px;
+      top: 44px;
       left: 66px;
       width: 71px;
       height: 97px;
-      background-image: url("../../img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 1;
@@ -290,7 +335,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 46px;
+      top: 49px;
       left: 52px;
       width: 100px;
       height: 100px;
@@ -305,11 +350,11 @@
     &::before {
       content: "";
       position: absolute;
-      top: 69px;
+      top: 71px;
       left: 34px;
       width: 134px;
       height: 57px;
-      background-image: url("../../img/icon-cat-pro.svg");
+      background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 1;
@@ -318,7 +363,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 47px;
+      top: 50px;
       left: 52px;
       width: 100px;
       height: 100px;

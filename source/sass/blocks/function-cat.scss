@@ -15,17 +15,22 @@
     left: 0;
     right: 0;
     background-color: #63a73a;
-    background-image: url("../../img/index-background-mobile@1x.jpg");
+    background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 
 .function-cat__can {
   position: relative;
-  top: 80px;
-  left: 3px;
-  margin-bottom: 80px;
+  top: 78px;
+  left: 2px;
+  margin-bottom: 77px;
 }
 
 .function-cat__headline {
@@ -39,6 +44,7 @@
   text-align: center;
   z-index: 1;
   color: #ffffff;
+  margin-bottom: -2px;
 }
 
 .function-cat__slogan {
@@ -64,9 +70,10 @@
   background-color: $color-green;
   text-decoration: none;
   color: #ffffff;
-  padding: 14px 0 13px 0;
+  padding: 12px 0 12px 0;
   display: block;
   text-align: center;
+  margin-bottom: 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,9 +83,9 @@
   }
 
   .function-cat__can {
-    top: 74px;
+    top: 72px;
     left: 12px;
-    margin-bottom: 55px;
+    margin-bottom: 48px;
   }
 
   .function-cat__headline {
@@ -88,7 +95,8 @@
     text-align: start;
     width: 415px;
     margin-left: 97px;
-    margin-top: 100px;
+    margin-top: 14px;
+    margin-bottom: 15px;
   }
 
   .function-cat__slogan {
@@ -96,8 +104,7 @@
     line-height: 20px;
     color: #000000;
     text-align: start;
-    margin-left: 103px;
-    margin-bottom: 10px;
+    margin-left: 100px;
   }
 
   .function-cat__button {
@@ -106,9 +113,9 @@
     line-height: 20px;
     width: 205px;
     padding: 17px 20px 15px 20px;
-    margin-left: 103px;
+    margin-left: 99px;
     order: -1;
-    margin-top: 350px;
+    margin-top: 268px;
     position: absolute;
   }
 
@@ -128,6 +135,9 @@
 
   .function-cat__headline {
     position: relative;
+    margin-left: 98px;
+    margin-top: 66px;
+    margin-bottom: 16px;
 
     &::before {
       content: "";
@@ -136,17 +146,16 @@
       height: 696px;
       top: -222px;
       left: 527px;
-      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-position: 0 0;
       z-index: 1;
-    }
-  }
 
-  .function-cat__headline {
-    margin-left: 98px;
-    margin-top: 68px;
-    margin-bottom: 15px;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
+    }
   }
 
   .function-cat__slogan {
@@ -155,12 +164,12 @@
 
   .function-cat__button {
     margin-left: 99px;
-    margin-top: 327px;
+    margin-top: 323px;
   }
 
   .function-cat__can {
-    top: -220px;
-    left: 469px;
+    top: -211px;
+    left: 471px;
     z-index: 2;
   }
 }

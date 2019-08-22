@@ -9,7 +9,8 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  margin-top: 74px;
+  margin-top: 82px;
+  margin-bottom: 9px;
   position: relative;
 
   &::after {
@@ -19,7 +20,7 @@
     height: 31px;
     top: -50px;
     right: 145px;
-    background-image: url("../../img/icon-plus-mobile.svg");
+    background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -31,7 +32,8 @@
   font-weight: 400;
   line-height: 16px;
   color: #444444;
-  margin-bottom: 22px;
+  margin: 0;
+  margin-bottom: 18px;
 }
 
 .page-else__button {
@@ -48,17 +50,24 @@
 
 @media (min-width: $tablet-width) {
   .page-else {
-    padding: 0 20px;
     border: 1px solid #dfdfdf;
-    margin-bottom: 93px;
-    margin-top: 50px;
+    margin-bottom: 84px;
+    margin-top: 55px;
+    box-sizing: border-box;
+    padding-left: 39px;
+    padding-right: 39px;
+    width: 324px;
+  }
+
+  .page-else__button {
+    padding: 9px 76px;
   }
 
   .page-else__title {
     font-size: 20px;
-    margin-top: 166px;
-    margin-left: 75px;
-    margin-bottom: 28px;
+    margin-top: 163px;
+    margin-left: 57px;
+    margin-bottom: 27px;
     width: 135px;
     text-align: center;
 
@@ -66,38 +75,46 @@
     &::after {
       width: 61px;
       height: 61px;
-      top: -114px;
-      right: 39px;
-      background-image: url("../../img/icon-plus.svg");
+      top: -109px;
+      right: 37px;
+      background-image: url("../img/icon-plus.svg");
       opacity: 0.2;
     }
   }
 
   .page-else__description {
     font-size: 16px;
+    line-height: normal;
     color: #444444;
     width: 170px;
-    margin-left: 55px;
-    margin-bottom: 126px;
+    margin-left: 38px;
+    margin-bottom: 86px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-else {
-    width: 221px;
+    box-sizing: border-box;
+    width: 245px;
+    margin-bottom: 83px;
+    margin-top: 56px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 17px;
   }
 
   .page-else__title {
-    margin-left: 44px;
-    margin-top: 163px;
+    margin-left: 17px;
+    margin-top: 164px;
+    margin-bottom: 27px;
   }
 
   .page-else__description {
-    margin-left: 25px;
-    margin-bottom: 84px;
+    margin-left: -2px;
+    margin-bottom: 83px;
   }
 
   .page-else__button {
-    padding: 13px 39px;
+    padding: 11px 37px;
   }
 }
