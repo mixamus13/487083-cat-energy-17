@@ -10,6 +10,33 @@
   background-color: #f2f2f2;
 }
 
+.page-footer__contacts {
+  display: flex;
+}
+
+.contacts__invite {
+  @include list-reset;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1;
+  color: #111111;
+  text-transform: uppercase;
+  margin-right: 23px;
+  margin-bottom: 27px;
+}
+
+.contacts__address {
+  @include list-reset;
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.page-footer__contacts-map {
+  margin: 0 -20px;
+}
+
 .page-footer__logo-image {
   margin-top: 39px;
   margin-left: 76px;
