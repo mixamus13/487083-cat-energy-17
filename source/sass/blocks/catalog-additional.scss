@@ -1,13 +1,29 @@
+.catalog-additional {
+  margin-bottom: 37px;
+}
+
 .catalog-additional__product {
   @include list-reset;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+  text-transform: initial;
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   padding-top: 31px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 3px;
+    top: 43px;
+    right: -20px;
+    background-color: #68b738;
+  }
 }
 
 .catalog-additional__list {
@@ -15,27 +31,43 @@
 }
 
 .catalog-additional__item {
-  margin-bottom: 32px;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 27px;
+  margin-bottom: 11px;
 }
 
-.catalog-additional {
+.catalog-additional__headline {
   @include list-reset;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .catalog-additional__info {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  width: 100%;
 }
 
-.catalog-additional__price,
+.catalog-additional__weight-cost {
+  width: 100%;
+  margin-bottom: 13px;
+}
+
 .catalog-additional__volume {
   font-family: "ArialMT", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  color: red;
-  margin-left: 20px;
+  color: #444444;
+  text-transform: lowercase;
+}
+
+.catalog-additional__price {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  text-transform: uppercase;
+  text-align: right;
 }

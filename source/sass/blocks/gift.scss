@@ -1,1 +1,28 @@
-//there
+.gift {
+  margin-bottom: -60px;
+}
+
+.gift__description {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f2f2f2;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 123px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    top: -122px;
+    left: 63px;
+    background-image: url("../../img/icon-gift-white.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 2;
+  }
+}

@@ -5,6 +5,23 @@
   color: #000000;
 }
 
+.page-footer__map {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    top: 177px;
+    left: 136px;
+    width: 55px;
+    height: 53px;
+    position: absolute;
+    background-image: url("../img/map-pin-png-50.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
 .page-footer__wrapper {
   background-color: #f2f2f2;
   margin-top: -4px;
@@ -15,18 +32,13 @@
   position: relative;
   background-color: #ffffff;
   margin-bottom: -40px;
+  z-index: 2;
+}
 
-  &::before {
-    content: "";
-    top: 224px;
-    left: 136px;
-    width: 55px;
-    height: 53px;
-    position: absolute;
-    background-image: url("../img/map-pin-png-50.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.page-footer__contacts--bg {
+  background-color: #f2f2f2;
+  padding-top: 27px;
+  z-index: 2;
 }
 
 .contacts__invite {
