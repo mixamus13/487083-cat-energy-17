@@ -1,1 +1,75 @@
-//there
+.additional__headline {
+  @include list-reset;
+  margin-top: 18px;
+  margin-bottom: 35px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 136px;
+    height: 3px;
+    background-color: #68b738;
+    top: 20px;
+    right: -20px;
+  }
+}
+
+.additional_checkbox-item {
+  margin-bottom: 24px;
+  margin-left: 16px;
+}
+
+.additional_checkbox-list {
+  @include list-reset;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.additional_checkbox-list label {
+  position: relative;
+  margin-left: 30px;
+}
+
+.additional_checkbox-item--checkbox + label::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  top: -2px;
+  left: -45px;
+  position: absolute;
+  border: 1px solid #cdcdcd;
+}
+
+.additional_checkbox-item--checkbox:checked + label::after {
+  content: "";
+  width: 21px;
+  height: 16px;
+  top: 4px;
+  left: -41px;
+  position: absolute;
+  background-image: url("../../img/tick-svg-green.svg");
+  background-repeat: no-repeat;
+}
+
+.parameters-cats__button {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738;
+  padding: 10px 77px 10px 77px;
+  margin-bottom: 14px;
+}
+
+.additional__sup {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  margin-left: 63px;
+  margin-bottom: 30px;
+}

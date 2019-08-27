@@ -36,71 +36,71 @@
   </nav>
 </header>
 <main class="form-program">
-  <section class="parameters-cats">
+  <section class="parameters-cats container">
     <form class="parameters-cats__form" method="get" action="https://htmlacademy.ru">
       <h2 class="parameters-cats__headline">Подбор программы</h2>
       <p class="parameters-cats__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <div class="parameters-cats__info">
+      <div class="parameters-cats__info parameters-cats__info--name">
         <label class="parameters-cats__name" for="parameters-cats__name">Имя:*</label>
         <input class="parameters-cats__field" id="parameters-cats__name" type="text" name="name" placeholder="Барсик">
       </div>
-      <div class="parameters-cats__info">
+      <div class="parameters-cats__info parameters-cats__info--weight">
         <label class="parameters-cats__weight" for="parameters-cats__weight">Вес (кг):*</label>
         <input class="parameters-cats__field" id="parameters-cats__weight" type="text" name="weight" placeholder="7">
       </div>
-      <div class="parameters-cats__info">
+      <div class="parameters-cats__info parameters-cats__info--age">
         <label class="parameters-cats__age" for="parameters-cats__age">Возраст (лет):</label>
         <input class="parameters-cats__field" id="parameters-cats__age" type="text" name="age" placeholder="7">
       </div>
       <div class="parameters-cats__checkbox">
         <ul class="parameters-cats__checkbox-filter">
-          <li>
-            <input class="parameters-cats__slimming" type="radio" name="filter" id="parameters-cats__slimming" value="slimming" checked>
+          <li class="parameters-cats__item">
+            <input class="visually-hidden parameters-cats__slimming parameters-cats__slimming--radio" type="radio" name="filter" id="parameters-cats__slimming" value="slimming" checked>
             <label for="parameters-cats__slimming">Похудение</label>
           </li>
-          <li>
-            <input class="parameters-cats__weight" type="radio" name="filter" id="parameters-cats__weight-radio" value="weight">
+          <li class="parameters-cats__item">
+            <input class="visually-hidden parameters-cats__mass parameters-cats__slimming--radio" type="radio" name="filter" id="parameters-cats__weight-radio" value="weight">
             <label for="parameters-cats__weight-radio">Набор массы</label>
           </li>
-          <li>
-            <input class="parameters-cats__advice" type="radio" name="filter" id="parameters-cats__advice" value="advice">
+          <li class="parameters-cats__item">
+            <input class="visually-hidden parameters-cats__advice parameters-cats__slimming--radio" type="radio" name="filter" id="parameters-cats__advice" value="advice">
             <label for="parameters-cats__advice">Не знаю (Нужен ваш совет)</label>
           </li>
         </ul>
       </div>
       <div class="data-cats">
         <h2 class="data-cats__headline">Контактные данные (владельца кота)</h2>
-        <div class="data-cats__email">
+        <div class="data-cats__email-label">
           <label class="data-cats__email" for="data-cats__email">E-mail:*</label>
           <input class="data-cats__field" id="data-cats__email" type="email" name="email" placeholder="kuklachev@gmail.com">
         </div>
-        <div class="data-cats__phone">
+        <div class="data-cats__phone-label">
           <label class="data-cats__phone" for="data-cats__phone">Телефон:*</label>
           <input class="data-cats__field" id="data-cats__phone" type="tel" name="tel" placeholder="8 (960) 900-60-90">
         </div>
         <div class="comment">
           <h2 class="comment__headline">Комментарий</h2>
           <label class="comment-label" for="comment-label"></label>
-          <textarea class="comment-field" id="comment-label" name="text" rows="5" cols="45" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="comment-field" id="comment-label" name="text" rows="7" cols="42" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
       <div class="additional">
         <h2 class="additional__headline">Дополнительно</h2>
-        <ul class="additional_checkbox">
-          <li>
-            <input class="additional__sugar" type="checkbox" name="sugar" id="additional__sugar" checked>
+        <ul class="additional_checkbox-list">
+          <li class="additional_checkbox-item">
+            <input class="visually-hidden additional__sugar additional_checkbox-item--checkbox" type="checkbox" name="sugar" id="additional__sugar" checked>
             <label for="additional__sugar">Сахарозаменитель</label>
           </li>
-          <li>
-            <input class="additional__water" type="checkbox" name="water" id="additional__water">
+          <li class="additional_checkbox-item">
+            <input class="visually-hidden additional__water additional_checkbox-item--checkbox" type="checkbox" name="water" id="additional__water">
             <label for="additional__water">Питьевая вода</label>
           </li>
-          <li>
-            <input class="additional__milk" type="checkbox" name="milk" id="additional__milk">
+          <li class="additional_checkbox-item">
+            <input class="visually-hidden additional__milk additional_checkbox-item--checkbox" type="checkbox" name="milk" id="additional__milk">
             <label for="additional__milk">Молоко</label>
           </li>
-          <li>
-            <input class="additional__vitamins" type="checkbox" name="vitamins" id="additional__vitamins">
+          <li class="additional_checkbox-item">
+            <input class="visually-hidden additional__vitamins additional_checkbox-item--checkbox" type="checkbox" name="vitamins" id="additional__vitamins">
             <label for="additional__vitamins">Витамины</label>
           </li>
         </ul>
