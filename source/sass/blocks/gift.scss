@@ -26,3 +26,26 @@
     z-index: 2;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .gift__photo-table {
+    margin-left: 10px;
+  }
+
+  .gift__description::before {
+    top: -6px;
+    left: 52px;
+  }
+
+  .gift__description {
+    line-height: 20px;
+    color: #f2f2f2;
+    margin-left: 50px;
+    margin-right: 113px;
+    position: relative;
+    right: 1px;
+    top: -149px;
+    padding-left: 386px;
+    text-align: start;
+  }
+}
