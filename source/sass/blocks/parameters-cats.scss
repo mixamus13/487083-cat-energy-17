@@ -104,3 +104,115 @@
   background-color: #68b738;
   border-radius: 50%;
 }
+
+@media (min-width: $tablet-width) {
+  .parameters-cats__headline {
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 9px;
+    margin-top: 39px;
+    margin-bottom: 55px;
+  }
+
+  .parameters-cats__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 51px;
+    width: 322px;
+    margin-bottom: 63px;
+  }
+
+  .parameters-cats__info {
+    margin-bottom: 2px;
+  }
+
+  .parameters-cats__name {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+
+  .parameters-cats__weight {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  .parameters-cats__age {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  .parameters-cats__field {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .parameters-cats__info--name input[type="text"] {
+    width: 536px;
+    padding: 12px 11px 12px 18px;
+  }
+
+  .parameters-cats__info--weight input[type="text"] {
+    width: 506px;
+    padding: 12px 10px 12px 18px;
+  }
+
+  .parameters-cats__info--age input[type="text"] {
+    width: 467px;
+    padding: 12px 10px 12px 19px;
+    margin-bottom: 41px;
+  }
+
+  .parameters-cats__item {
+    margin-bottom: 33px;
+  }
+
+  .parameters-cats__checkbox {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .parameters-cats__checkbox-filter {
+    margin-left: 71px;
+    margin-right: 67px;
+    border: 1px solid #cdcdcd;
+    padding: 36px 81px 3px 41px;
+    margin-bottom: 42px;
+  }
+
+  .parameters-cats__slimming {
+    font-size: 20px;
+  }
+
+  .parameters-cats__mass {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .parameters-cats__advice {
+    font-size: 20px;
+  }
+
+  .parameters-cats__slimming--radio + label::before {
+    content: "";
+    width: 38px;
+    height: 38px;
+    top: -10px;
+    left: -14px;
+    position: absolute;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  .parameters-cats__slimming--radio:checked + label::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: -3px;
+    position: absolute;
+    border: 1px solid #68b738;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+}

@@ -71,30 +71,71 @@
   margin-bottom: 14px;
 }
 
-.comment__headline {
-  @include list-reset;
-  font-size: 24px;
-  line-height: 24px;
-  position: relative;
-  margin-bottom: 35px;
+@media (min-width: $tablet-width) {
+  .data-cats__headline {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-left: 49px;
+    margin-bottom: 73px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 158px;
-    height: 3px;
-    background-color: #68b738;
-    top: 14px;
-    right: -20px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 145px;
+      height: 3px;
+      background-color: #68b738;
+      top: 22px;
+      right: -20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+      top: 22px;
+      left: -69px;
+    }
   }
-}
 
-.comment-field {
-  font-size: 16px;
-  line-height: 18px;
-  padding-top: 11px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  border: 1px solid #cdcdcd;
-  text-transform: uppercase;
+  .data-cats__email {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-left: 50px;
+
+    &::before {
+      top: 10px;
+      right: -551px;
+    }
+  }
+
+  .data-cats__phone {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-left: 50px;
+
+    &::before {
+      top: 5px;
+      right: -532px;
+    }
+  }
+
+  .data-cats__field {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 503px;
+    padding: 12px 10px 12px 20px;
+    margin-bottom: 63px;
+  }
+
+  .data-cats__email-label input[type="email"] {
+    width: 522px;
+    padding: 12px 7px 12px 24px;
+    margin-bottom: 17px;
+  }
 }
