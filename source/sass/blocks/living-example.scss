@@ -25,7 +25,7 @@
   line-height: 18px;
   letter-spacing: 0.03px;
   color: #444444;
-  margin-bottom: 39px;
+  margin-bottom: 25px;
 }
 
 .living-example-measuring {
@@ -34,72 +34,47 @@
   margin-bottom: 19px;
 }
 
-.living-example-measuring__measuring-weight,
-.living-example__measuring-time {
-  @include list-reset;
-  text-align: center;
-}
-
 .living-example__after-cat--none {
   display: none;
 }
 
-.living-example__measuring-item:first-child {
-  font-size: 24px;
-  line-height: 24px;
-  color: #111111;
-  text-transform: uppercase;
-  margin-bottom: 9px;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    border: 1px solid #cdcdcd;
-    border-radius: 3px;
-    width: 124px;
-    height: 56px;
-    top: -14px;
-    left: -22px;
-  }
+.living-example__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin-bottom: 35px;
 }
 
-.living-example__measuring-item:last-child {
+.living-example__measuring {
+  width: 44%;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 14px 0;
+}
+
+.living-example__item {
+  @include list-reset;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase ;
+}
+
+.living-example__weight {
+  @include list-reset;
+  position: absolute;
   font-family: "ArialMT", "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
-  text-align: center;
-}
-
-.living-example__measuring-item--kg {
-  margin-left: 21px;
-  margin-right: 34px;
-  display: block;
-}
-
-.living-example__measuring-item-days {
-  margin-left: 39px;
-  margin-right: 19px;
-  display: block;
-}
-
-.living-example__measuring-item--weight {
-  margin-left: 16px;
-  margin-right: 32px;
+  bottom: -17px;
+  width: 82px;
+  padding: 0 2px;
   background-color: #f2f2f2;
-  position: relative;
-  padding-left: 17px;
-  padding-right: 17px;
-}
-
-.living-example__measuring-item--time {
-  margin-left: 37px;
-  margin-right: 20px;
-  background-color: #f2f2f2;
-  position: relative;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 .living-example__costs-money {
