@@ -11,17 +11,25 @@
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   padding-top: 31px;
-  padding-bottom: 30px;
-  margin-bottom: 15px;
+  padding-bottom: 34px;
+  margin-bottom: 14px;
   position: relative;
+
+  .catalog-additional--header-bg {
+    padding: 0 24px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    width: 53px;
+    width: 107%;
     height: 3px;
-    top: 43px;
-    right: -20px;
+    top: 50%;
+    right: 0;
+    left: 0;
     background-color: #68b738;
   }
 }
@@ -32,8 +40,7 @@
 
 .catalog-additional__item {
   border-bottom: 1px solid #dfdfdf;
-  padding-bottom: 27px;
-  margin-bottom: 11px;
+  margin-bottom: 30px;
 }
 
 .catalog-additional__headline {
@@ -46,7 +53,7 @@
 }
 
 .catalog-additional__info {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   width: 100%;
 }
 

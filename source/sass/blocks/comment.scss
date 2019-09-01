@@ -2,18 +2,32 @@
   @include list-reset;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   position: relative;
   margin-bottom: 35px;
+
+  .comment__headline--bg {
+    padding: 0 24px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    width: 158px;
+    width: 100%;
     height: 3px;
+    top: 50%;
+    right: 0;
+    left: 20px;
     background-color: #68b738;
-    top: 14px;
-    right: -20px;
   }
+}
+
+.comment__info {
+  display: flex;
+  margin-bottom: 22px;
 }
 
 .comment-field {
@@ -24,6 +38,11 @@
   padding-bottom: 10px;
   border: 1px solid #cdcdcd;
   text-transform: uppercase;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  height: 150px;
+  resize: vertical;
 }
 
 @media (min-width: $tablet-width) {

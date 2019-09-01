@@ -2,6 +2,7 @@
   @include list-reset;
   font-size: 36px;
   line-height: 60px;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 
@@ -11,50 +12,31 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 33px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .parameters-cats__info {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  margin-bottom: 13px;
+  align-items: baseline;
 }
 
-.parameters-cats__info--name input[type="text"] {
-  width: 201px;
-  padding: 12px 11px 12px 11px;
-  margin-bottom: 14px;
-}
-
-.parameters-cats__info--weight input[type="text"] {
-  width: 177px;
-  padding: 12px 10px 12px 10px;
-  margin-bottom: 15px;
-}
-
-.parameters-cats__info--age input[type="text"] {
-  width: 145px;
-  padding: 12px 10px 12px 13px;
-  margin-bottom: 23px;
-}
-
-.parameters-cats__name {
-  margin-right: 13px;
-}
-
-.parameters-cats__weight {
-  margin-right: 17px;
-}
-
-.parameters-cats__age {
-  margin-right: 13px;
+.parameters-cats__data {
+  margin-right: 15px;
 }
 
 .parameters-cats__field {
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
   border: 1px solid #cdcdcd;
+  padding: 10px 10px 10px 15px;
+  flex-grow: 1;
+}
+
+.parameters-cats__info--age {
+  margin-bottom: 23px;
 }
 
 .parameters-cats__checkbox {
@@ -124,43 +106,6 @@
 
   .parameters-cats__info {
     margin-bottom: 2px;
-  }
-
-  .parameters-cats__name {
-    font-size: 20px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-  }
-
-  .parameters-cats__weight {
-    font-size: 20px;
-    margin-left: 50px;
-  }
-
-  .parameters-cats__age {
-    font-size: 20px;
-    margin-left: 50px;
-  }
-
-  .parameters-cats__field {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .parameters-cats__info--name input[type="text"] {
-    width: 536px;
-    padding: 12px 11px 12px 18px;
-  }
-
-  .parameters-cats__info--weight input[type="text"] {
-    width: 506px;
-    padding: 12px 10px 12px 18px;
-  }
-
-  .parameters-cats__info--age input[type="text"] {
-    width: 467px;
-    padding: 12px 10px 12px 19px;
-    margin-bottom: 41px;
   }
 
   .parameters-cats__item {

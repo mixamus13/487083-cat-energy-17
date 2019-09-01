@@ -2,16 +2,25 @@
   @include list-reset;
   margin-top: 18px;
   margin-bottom: 35px;
+  font-weight: 400;
   position: relative;
+
+  .additional__headline--bg {
+    padding: 0 24px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    width: 136px;
+    width: 100%;
     height: 3px;
+    top: 50%;
+    right: 0;
+    left: 20px;
     background-color: #68b738;
-    top: 20px;
-    right: -20px;
   }
 }
 
@@ -55,14 +64,14 @@
 }
 
 .parameters-cats__button {
-  display: block;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738;
-  padding: 10px 77px 10px 77px;
+  padding: 11px 78px 11px 78px;
   margin-bottom: 14px;
+  border: none;
 }
 
 .additional__sup-sup {
@@ -74,7 +83,7 @@
 }
 
 .additional__sup {
-  margin-bottom: 58px;
+  margin-bottom: 37px;
 }
 
 @media (min-width: $tablet-width) {
