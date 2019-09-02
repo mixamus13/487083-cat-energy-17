@@ -176,8 +176,8 @@
 
       &::before {
         content: "";
-        top: 151px;
-        left: 324px;
+        top: 156px;
+        left: 1003px;
         width: 113px;
         height: 106px;
         position: absolute;
@@ -186,5 +186,31 @@
         background-position: 0 0;
       }
     }
+  }
+
+  .page-footer__contacts {
+    margin: 0;
+    display: flex;
+    width: 570px;
+    height: 201px;
+    margin-left: 110px;
+    top: 300px;
+  }
+
+  .contacts__invite {
+    font-weight: 400;
+    margin-left: 0;
+    margin-right: 92px;
+    padding-left: 56px;
+    padding-top: 62px;
+  }
+
+  .contacts__address {
+    text-align: left;
+    padding-top: 60px;
+  }
+
+  .page-footer {
+    margin-top: -219px;
   }
 }

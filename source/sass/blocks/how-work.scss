@@ -232,6 +232,10 @@
 @media (min-width: $desktop-width) {
   .how-work__list {
     justify-content: start;
+
+    &::before {
+      border-bottom: none;
+    }
   }
 
   .how-work__item {
