@@ -77,7 +77,7 @@
     line-height: 36px;
     font-weight: 400;
     margin-left: 49px;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
 
     &::before {
       content: "";
@@ -100,26 +100,33 @@
     }
   }
 
-  .data-cats__email {
+  .data-cats__info {
+    margin-bottom: 19px;
+    margin-left: 50px;
+    margin-right: 45px;
+    align-items: center;
+  }
+
+  .data-cats__label {
+    margin-right: 18px;
+  }
+
+  .data-cats__label--email {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
-    margin-left: 50px;
 
     &::before {
-      top: 10px;
+      top: 4px;
       right: -551px;
     }
   }
 
-  .data-cats__phone {
+  .data-cats__label--phone {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
-    margin-left: 50px;
 
     &::before {
-      top: 5px;
+      top: 1px;
       right: -532px;
     }
   }
@@ -127,15 +134,10 @@
   .data-cats__field {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
-    width: 503px;
-    padding: 12px 10px 12px 20px;
-    margin-bottom: 63px;
+    padding: 11px 10px 10px 19px;
   }
 
-  .data-cats__email-label input[type="email"] {
-    width: 522px;
-    padding: 12px 7px 12px 24px;
-    margin-bottom: 17px;
+  .data-cats__info--phone {
+    margin-bottom: 65px;
   }
 }

@@ -101,11 +101,28 @@
     line-height: 30px;
     margin-left: 51px;
     width: 322px;
-    margin-bottom: 63px;
+    margin-bottom: 66px;
   }
 
   .parameters-cats__info {
-    margin-bottom: 2px;
+    margin-bottom: 20px;
+    margin-left: 51px;
+  }
+
+  .parameters-cats__data {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .parameters-cats__field {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 47px;
+    padding: 10px 10px 10px 21px;
+  }
+
+  .parameters-cats__info--age {
+    margin-bottom: 46px;
   }
 
   .parameters-cats__item {
@@ -161,3 +178,5 @@
     border-radius: 50%;
   }
 }
+
+@media (min-width: $desktop-width) {}

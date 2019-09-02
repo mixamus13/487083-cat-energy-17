@@ -91,14 +91,20 @@
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
-    margin-top: 60px;
+    margin-top: 64px;
     margin-left: 49px;
     margin-bottom: 66px;
+
+    .additional__headline--bg {
+      padding: 0 42px 0 0;
+      position: relative;
+      background-color: #ffffff;
+      z-index: 1;
+    }
 
     &::before {
       content: "";
       position: absolute;
-      width: 446px;
       height: 3px;
       background-color: #68b738;
       top: 22px;
