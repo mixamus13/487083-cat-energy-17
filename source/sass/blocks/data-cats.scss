@@ -141,3 +141,58 @@
     margin-bottom: 65px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .data-cats__headline {
+    margin-left: 19px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 777px;
+      height: 3px;
+      background-color: #68b738;
+      top: 22px;
+      right: -90px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 71px;
+      height: 3px;
+      background-color: #68b738;
+      top: 22px;
+      left: -109px;
+    }
+  }
+
+  .data-cats__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 1294px;
+    margin-left: -28px;
+    margin-bottom: 2px;
+  }
+
+  .data-cats__info {
+    width: 569px;
+    margin-left: 50px;
+    margin-right: 27px;
+  }
+
+  .data-cats__label--email {
+    &::before {
+      top: 4px;
+      right: -487px;
+    }
+  }
+
+  .data-cats__label--phone {
+    &::before {
+      top: 1px;
+      right: -467px;
+    }
+  }
+}

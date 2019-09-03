@@ -182,3 +182,52 @@
     padding-top: 11px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional__headline {
+    margin-left: 19px;
+
+    &::before {
+      top: 22px;
+      right: -20px;
+      width: 1311px;
+    }
+
+    &::after {
+      width: 70px;
+      top: 22px;
+      left: -109px;
+    }
+  }
+
+  .additional_checkbox-list {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+
+  .additional_checkbox-item {
+    &:nth-child(1) {
+      margin-left: -15px;
+      margin-right: 90px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 88px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 90px;
+    }
+  }
+
+  .additional__request {
+    margin-bottom: 80px;
+  }
+
+  .parameters-cats__button {
+    padding: 9px 210px 12px 205px;
+    margin-left: 21px;
+    margin-right: 20px;
+  }
+}

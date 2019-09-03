@@ -40,6 +40,8 @@
     <form class="parameters-cats__form" method="get" action="https://htmlacademy.ru">
       <h2 class="parameters-cats__headline">Подбор программы</h2>
       <p class="parameters-cats__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <div class="parameters-cats__part">
+        <div class="parameters-cat__list">
       <div class="parameters-cats__info parameters-cats__info--name">
         <label class="parameters-cats__data" for="cats-name">Имя:*</label>
         <input class="parameters-cats__field" id="cats-name" type="text" name="name" placeholder="Барсик">
@@ -52,6 +54,7 @@
         <label class="parameters-cats__data" for="cats-age">Возраст (лет):</label>
         <input class="parameters-cats__field" id="cats-age" type="text" name="age" placeholder="7">
       </div>
+        </div>
       <div class="parameters-cats__checkbox">
         <ul class="parameters-cats__checkbox-filter">
           <li class="parameters-cats__item">
@@ -68,15 +71,18 @@
           </li>
         </ul>
       </div>
+      </div>
       <div class="data-cats">
         <h2 class="data-cats__headline"><span class="data-cats__headline--bg">Контактные данные (владельца кота)</span></h2>
-        <div class="data-cats__info">
+        <div class="data-cats__list">
+        <div class="data-cats__info data-cats__info--email">
           <label class="data-cats__label data-cats__label--email" for="cats-email">E-mail:*</label>
           <input class="data-cats__field" id="cats-email" type="email" name="email" placeholder="kuklachev@gmail.com">
         </div>
         <div class="data-cats__info data-cats__info--phone">
           <label class="data-cats__label data-cats__label--phone" for="cats-phone">Телефон:*</label>
           <input class="data-cats__field" id="cats-phone" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+        </div>
         </div>
         <div class="comment">
           <h2 class="comment__headline"><span class="comment__headline--bg">Комментарий</span></h2>

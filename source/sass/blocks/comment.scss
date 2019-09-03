@@ -83,3 +83,33 @@
     margin-right: 47px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comment__headline {
+    margin-left: 19px;
+
+    &::before {
+      width: 71px;
+      height: 3px;
+      top: 22px;
+      left: -109px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1111px;
+      height: 3px;
+      background-color: #68b738;
+      top: 22px;
+      right: -90px;
+    }
+  }
+
+  .comment-field {
+    margin-left: 21px;
+    margin-right: 20px;
+    width: 1220px;
+    margin-bottom: 4px;
+  }
+}
