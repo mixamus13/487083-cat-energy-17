@@ -117,6 +117,15 @@
     order: -1;
     margin-top: 268px;
     position: absolute;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active,
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   .function-cat::before {
