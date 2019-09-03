@@ -61,6 +61,15 @@
 
   .page-else__button {
     padding: 9px 76px;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active,
+    &:focus {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 
   .page-else__title {
