@@ -1,0 +1,78 @@
+.gift {
+  margin-top: 39px;
+  margin-bottom: -61px;
+}
+
+.gift__description {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f2f2f2;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  position: relative;
+  bottom: 123px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    top: -122px;
+    left: 63px;
+    background-image: url("../../img/icon-gift-white.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    margin-top: 69px;
+    margin-bottom: -75px;
+  }
+
+  .gift__photo-table {
+    margin-left: 10px;
+  }
+
+  .gift__description::before {
+    top: -6px;
+    left: 52px;
+  }
+
+  .gift__description {
+    line-height: 20px;
+    color: #f2f2f2;
+    margin-left: 50px;
+    margin-right: 113px;
+    position: relative;
+    right: 1px;
+    top: -149px;
+    padding-left: 386px;
+    text-align: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    margin-top: 1px;
+    margin-bottom: -59px;
+    margin-left: 66px;
+  }
+
+  .gift__description {
+    padding-left: 0;
+    margin-right: 63px;
+    text-align: center;
+    padding-top: 29px;
+    margin-bottom: -13px;
+
+    &::before {
+      top: -93px;
+      left: 57px;
+    }
+  }
+}

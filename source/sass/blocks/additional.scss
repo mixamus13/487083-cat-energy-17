@@ -1,0 +1,233 @@
+.additional__headline {
+  @include list-reset;
+  margin-top: 18px;
+  margin-bottom: 35px;
+  font-weight: 400;
+  position: relative;
+
+  .additional__headline--bg {
+    padding: 0 24px 0 0;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    right: 0;
+    left: 20px;
+    background-color: #68b738;
+  }
+}
+
+.additional_checkbox-item {
+  margin-bottom: 24px;
+  margin-left: 16px;
+}
+
+.additional_checkbox-list {
+  @include list-reset;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.additional_checkbox-list label {
+  position: relative;
+  margin-left: 30px;
+}
+
+.additional_checkbox-item--checkbox + label::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  top: -2px;
+  left: -45px;
+  position: absolute;
+  border: 1px solid #cdcdcd;
+}
+
+.additional_checkbox-item--checkbox:checked + label::after {
+  content: "";
+  width: 21px;
+  height: 16px;
+  top: 4px;
+  left: -41px;
+  position: absolute;
+  background-image: url("../../img/tick-svg-green.svg");
+  background-repeat: no-repeat;
+}
+
+.parameters-cats__button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738;
+  padding: 11px 78px 11px 78px;
+  margin-bottom: 14px;
+  border: none;
+}
+
+.additional__sup-sup {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  margin-left: 63px;
+}
+
+.additional__sup {
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional__headline {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-top: 64px;
+    margin-left: 49px;
+    margin-bottom: 66px;
+
+    .additional__headline--bg {
+      padding: 0 42px 0 0;
+      position: relative;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      background-color: #68b738;
+      top: 22px;
+      right: -20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+      top: 22px;
+      left: -69px;
+    }
+  }
+
+  .additional_checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 62px;
+  }
+
+  .additional_checkbox-item {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 220px;
+
+    &:nth-child(1) {
+      margin-right: 108px;
+      margin-bottom: 52px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 109px;
+    }
+  }
+
+  .additional_checkbox-item--checkbox + label::before {
+    content: "";
+    width: 38px;
+    height: 38px;
+    top: -4px;
+    left: -58px;
+    position: absolute;
+    border: 1px solid #cdcdcd;
+  }
+
+  .additional_checkbox-item--checkbox:checked + label::after {
+    top: 8px;
+    left: -48px;
+  }
+
+  .additional__request {
+    display: flex;
+  }
+
+  .parameters-cats__button {
+    font-size: 20px;
+    line-height: 20px;
+    height: 53px;
+    padding: 10px 66px 10px 66px;
+    margin-left: 47px;
+  }
+
+  .additional__sup-sup {
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  .additional__sup {
+    margin-bottom: 34px;
+    padding-top: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional__headline {
+    margin-left: 19px;
+
+    &::before {
+      top: 22px;
+      right: -20px;
+      width: 1311px;
+    }
+
+    &::after {
+      width: 70px;
+      top: 22px;
+      left: -109px;
+    }
+  }
+
+  .additional_checkbox-list {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+
+  .additional_checkbox-item {
+    &:nth-child(1) {
+      margin-left: -15px;
+      margin-right: 90px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 88px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 90px;
+    }
+  }
+
+  .additional__request {
+    margin-bottom: 80px;
+  }
+
+  .parameters-cats__button {
+    padding: 9px 210px 12px 205px;
+    margin-left: 21px;
+    margin-right: 20px;
+  }
+}

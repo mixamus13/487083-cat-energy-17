@@ -21,5 +21,18 @@
   .copyright__link {
     margin-bottom: 0;
     margin-right: 21px;
+    margin-left: 3px;
+  }
+
+  .copyright__logo {
+    margin-top: -9px;
+    margin-right: -14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    margin-right: 32px;
+    margin-left: -8px;
   }
 }

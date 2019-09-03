@@ -35,35 +35,132 @@
     </div>
   </nav>
 </header>
+<main class="form-program">
+  <section class="parameters-cats container">
+    <form class="parameters-cats__form" method="get" action="https://htmlacademy.ru">
+      <h2 class="parameters-cats__headline">Подбор программы</h2>
+      <p class="parameters-cats__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <div class="parameters-cats__part">
+        <div class="parameters-cat__list">
+      <div class="parameters-cats__info parameters-cats__info--name">
+        <label class="parameters-cats__data" for="cats-name">Имя:*</label>
+        <input class="parameters-cats__field" id="cats-name" type="text" name="name" placeholder="Барсик">
+      </div>
+      <div class="parameters-cats__info parameters-cats__info--weight">
+        <label class="parameters-cats__data" for="cats-weight">Вес (кг):*</label>
+        <input class="parameters-cats__field" id="cats-weight" type="text" name="weight" placeholder="7">
+      </div>
+      <div class="parameters-cats__info parameters-cats__info--age">
+        <label class="parameters-cats__data" for="cats-age">Возраст (лет):</label>
+        <input class="parameters-cats__field" id="cats-age" type="text" name="age" placeholder="7">
+      </div>
+        </div>
+      <div class="parameters-cats__checkbox">
+        <ul class="parameters-cats__checkbox-filter">
+          <li class="parameters-cats__item">
+            <input class="visually-hidden parameters-cats__slimming--radio" type="radio" name="filter" id="cats-slimming" value="slimming" checked>
+            <label class="parameters-cats__slimming" for="cats-slimming">Похудение</label>
+          </li>
+          <li class="parameters-cats__item">
+            <input class="visually-hidden parameters-cats__slimming--radio" type="radio" name="filter" id="cats-up" value="weight">
+            <label class="parameters-cats__mass" for="cats-up">Набор массы</label>
+          </li>
+          <li class="parameters-cats__item">
+            <input class="visually-hidden parameters-cats__slimming--radio" type="radio" name="filter" id="cats-advice" value="advice">
+            <label class="parameters-cats__advice" for="cats-advice">Не знаю (Нужен ваш совет)</label>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="data-cats">
+        <h2 class="data-cats__headline"><span class="data-cats__headline--bg">Контактные данные (владельца кота)</span></h2>
+        <div class="data-cats__list">
+        <div class="data-cats__info data-cats__info--email">
+          <label class="data-cats__label data-cats__label--email" for="cats-email">E-mail:*</label>
+          <input class="data-cats__field" id="cats-email" type="email" name="email" placeholder="kuklachev@gmail.com">
+        </div>
+        <div class="data-cats__info data-cats__info--phone">
+          <label class="data-cats__label data-cats__label--phone" for="cats-phone">Телефон:*</label>
+          <input class="data-cats__field" id="cats-phone" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+        </div>
+        </div>
+        <div class="comment">
+          <h2 class="comment__headline"><span class="comment__headline--bg">Комментарий</span></h2>
+          <div class="comment__info">
+            <label class="comment-label" for="comment-label"></label>
+            <textarea class="comment-field" id="comment-label" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="additional">
+        <h2 class="additional__headline"><span class="additional__headline--bg">Дополнительно</span></h2>
+        <ul class="additional_checkbox-list">
+          <li class="additional_checkbox-item">
+            <input class="visually-hidden additional__sugar additional_checkbox-item--checkbox" type="checkbox" name="sugar" id="sugar" checked>
+            <label for="sugar">Сахарозаменитель</label>
+          </li>
+          <li class="additional_checkbox-item">
+            <input class="visually-hidden additional__water additional_checkbox-item--checkbox" type="checkbox" name="water" id="water">
+            <label for="water">Питьевая вода</label>
+          </li>
+          <li class="additional_checkbox-item">
+            <input class="visually-hidden additional__milk additional_checkbox-item--checkbox" type="checkbox" name="milk" id="milk">
+            <label for="milk">Молоко</label>
+          </li>
+          <li class="additional_checkbox-item">
+            <input class="visually-hidden additional__vitamins additional_checkbox-item--checkbox" type="checkbox" name="vitamins" id="vitamins">
+            <label for="vitamins">Витамины</label>
+          </li>
+        </ul>
+      </div>
+      <div class="additional__request">
+        <button type="submit" class="parameters-cats__button">Отправить заявку</button>
+        <div class="additional__sup">
+          <small class="additional__sup-sup">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </div>
+      </div>
+    </form>
+  </section>
+</main>
 <footer class="page-footer">
-  <div class="page-footer__wrapper container">
-    <a class="page-footer__logo">
-      <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Магазин Кэт энерджи">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__link--vkontakte" src="img/icon-vk.svg" width="22" height="12" alt="Логотип вконтакте">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__link--instagram" src="img/icon-insta.svg" width="17" height="17" alt="Логотип инстаграм">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__link--facebook" src="img/icon-fb.svg" width="10" height="19" alt="Логотип фэйсбук">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип Академии">
+  <div class="page-footer__contacts page-footer__contacts--bg container">
+    <h3 class="contacts__invite contacts__invite--catalog">приглашаем к сотрудничеству дилеров!</h3>
+    <p class="contacts__address contacts__address--catalog"><span class="contacts__address-city">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</p>
+  </div>
+  <div class="page-footer__map container">
+  </div>
+  <div class="page-footer__bg">
+    <div class="page-footer__wrapper container">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Магазин Кэт энерджи">
       </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__link--vkontakte" src="img/icon-vk.svg" width="22" height="12" alt="Логотип вконтакте">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__link--instagram" src="img/icon-insta.svg" width="17" height="17" alt="Логотип инстаграм">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__link--facebook" src="img/icon-fb.svg" width="10" height="19" alt="Логотип фэйсбук">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип Академии">
+        </a>
+      </div>
     </div>
   </div>
 </footer>

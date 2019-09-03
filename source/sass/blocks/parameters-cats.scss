@@ -1,0 +1,218 @@
+.parameters-cats__headline {
+  @include list-reset;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.parameters-cats__description {
+  @include list-reset;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 33px;
+  margin-bottom: 38px;
+}
+
+.parameters-cats__info {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: flex;
+  margin-bottom: 13px;
+  align-items: baseline;
+}
+
+.parameters-cats__data {
+  margin-right: 15px;
+}
+
+.parameters-cats__field {
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  padding: 10px 10px 10px 15px;
+  flex-grow: 1;
+}
+
+.parameters-cats__info--age {
+  margin-bottom: 23px;
+}
+
+.parameters-cats__checkbox {
+  margin: 0 -20px;
+  padding: 0 -20px;
+  margin-bottom: 29px;
+  border-top: 1px solid #dfdfdf;
+  padding-top: 25px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.parameters-cats__checkbox-filter {
+  @include list-reset;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.parameters-cats__item {
+  padding-left: 45px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.parameters-cats__slimming--radio + label::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  top: -4px;
+  left: 1px;
+  position: absolute;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.parameters-cats__slimming--radio:checked + label::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  top: 5px;
+  left: 10px;
+  position: absolute;
+  border: 1px solid #68b738;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .parameters-cats__headline {
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 9px;
+    margin-top: 39px;
+    margin-bottom: 55px;
+  }
+
+  .parameters-cats__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 51px;
+    width: 322px;
+    margin-bottom: 66px;
+  }
+
+  .parameters-cats__info {
+    margin-bottom: 20px;
+    margin-left: 51px;
+  }
+
+  .parameters-cats__data {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .parameters-cats__field {
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 47px;
+    padding: 10px 10px 10px 21px;
+  }
+
+  .parameters-cats__info--age {
+    margin-bottom: 46px;
+  }
+
+  .parameters-cats__item {
+    margin-bottom: 33px;
+  }
+
+  .parameters-cats__checkbox {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .parameters-cats__checkbox-filter {
+    margin-left: 71px;
+    margin-right: 67px;
+    border: 1px solid #cdcdcd;
+    padding: 36px 81px 3px 41px;
+    margin-bottom: 42px;
+  }
+
+  .parameters-cats__slimming {
+    font-size: 20px;
+  }
+
+  .parameters-cats__mass {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .parameters-cats__advice {
+    font-size: 20px;
+  }
+
+  .parameters-cats__slimming--radio + label::before {
+    content: "";
+    width: 38px;
+    height: 38px;
+    top: -10px;
+    left: -14px;
+    position: absolute;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  .parameters-cats__slimming--radio:checked + label::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: -3px;
+    position: absolute;
+    border: 1px solid #68b738;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .parameters-cats__headline {
+    margin-left: 20px;
+    margin-top: 56px;
+  }
+
+  .parameters-cats__description {
+    margin-left: 20px;
+  }
+
+  .parameters-cats__part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .parameters-cat__list {
+    flex-direction: column;
+    margin-left: -30px;
+    width: 679px;
+  }
+
+  .parameters-cats__field {
+    margin-right: 30px;
+  }
+
+  .parameters-cats__checkbox {
+    margin-bottom: 24px;
+  }
+
+  .parameters-cats__checkbox-filter {
+    width: 445px;
+    margin-top: -25px;
+    margin-right: 40px;
+    padding: 36px 81px 0 41px;
+  }
+}

@@ -5,7 +5,8 @@
   color: #111111;
   border-bottom: 1px solid #eaeaea;
   margin: 0 -20px;
-  padding-bottom: 29px;
+  padding-top: 16px;
+  padding-bottom: 30px;
   margin-bottom: -4px;
   margin-left: -20px;
   padding-left: 20px;
@@ -17,10 +18,10 @@
 }
 
 .catalog__item {
-  list-style: none;
+  @include list-reset;
   padding: 0 20px;
   border-bottom: 1px solid #eaeaea;
-  padding-bottom: 26px;
+  padding-bottom: 21px;
 }
 
 .catalog__title {
@@ -30,7 +31,6 @@
   text-transform: uppercase;
   width: 85px;
   margin: 0;
-  padding-top: 25px;
   padding-bottom: 12px;
   padding-left: 140px;
 }
@@ -62,164 +62,22 @@
 }
 
 .catalog__info {
-  margin-bottom: 33px;
+  margin-bottom: 23px;
   margin-left: 73px;
 }
 
-.catalog__title--chicken-small {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 144px;
-    top: 5px;
-    right: 85px;
-    background-image: url("../img/chicken-small-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/chicken-small-mobile@2x.jpg");
-      background-size: 140px auto;
-    }
-  }
+.catalog__chicken-small {
+  margin-bottom: -130px;
 }
 
-.catalog__title--chicken-big {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 144px;
-    top: 5px;
-    right: 85px;
-    background-image: url("../img/chicken-big-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/chicken-big-mobile@2x.jpg");
-      background-size: 140px auto;
-    }
-  }
-}
-
-.catalog__title--fish-small {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 144px;
-    top: 5px;
-    right: 85px;
-    background-image: url("../img/fish-small-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/fish-small-mobile@2x.jpg");
-      background-size: 140px auto;
-    }
-  }
-}
-
-.catalog__title--fish-big {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 144px;
-    top: 5px;
-    right: 85px;
-    background-image: url("../img/fish-big-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/fish-big-mobile@2x.jpg");
-      background-size: 140px auto;
-    }
-  }
-}
-
-.catalog__title--buckwheat-small {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 144px;
-    top: 5px;
-    right: 85px;
-    background-image: url("../img/buckwheat-small-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/buckwheat-small-mobile@2x.jpg");
-      background-size: 140px auto;
-    }
-  }
-}
-
-.catalog__title--buckwheat-big {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 144px;
-    top: 5px;
-    right: 85px;
-    background-image: url("../img/buckwheat-big-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/buckwheat-big-mobile@2x.jpg");
-      background-size: 140px auto;
-    }
-  }
-}
-
-.catalog__title--rice-small {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 144px;
-    top: 5px;
-    right: 85px;
-    background-image: url("../img/rice-small-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/rice-small-mobile@2x.jpg");
-      background-size: 140px auto;
-    }
-  }
-}
-
-.catalog-link {
+.catalog__link-order {
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: $color-green;
   text-transform: uppercase;
-  padding: 8px 110px;
+  padding: 10px 110px 10px;
   text-decoration: none;
 }
 
@@ -229,7 +87,7 @@
     margin-bottom: 85px;
     margin-top: 54px;
     padding-top: 115px;
-    padding-bottom: 46px;
+    padding-bottom: 39px;
     padding-left: 39px;
     padding-right: 39px;
     width: 327px;
@@ -238,18 +96,24 @@
 
   .catalog__info {
     width: 100%;
-    margin-bottom: 43px;
+    margin-bottom: 35px;
     margin-left: 0;
   }
 
   .catalog__product {
     font-size: 60px;
     text-align: left;
-    margin-top: 39px;
+    margin-top: 23px;
     margin-bottom: 75px;
-    margin-left: -9px;
+    margin-left: -10px;
     border-bottom: none;
     padding-bottom: 34px;
+  }
+
+  .catalog__chicken-small {
+    margin-top: -194px;
+    margin-bottom: 7px;
+    margin-left: -37px;
   }
 
   .catalog__list {
@@ -264,8 +128,8 @@
     text-align: center;
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: 50px;
-    margin-bottom: 26px;
+    margin-top: 25px;
+    margin-bottom: 28px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -304,163 +168,48 @@
     padding-bottom: 7px;
   }
 
-  .catalog__title--chicken-small {
-    position: relative;
-
-    &::after {
-      width: 227px;
-      height: 172px;
-      top: -210px;
-      right: 60px;
-      background-image: url("../img/chicken-small-tablet@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/chicken-small-tablet@2x.png");
-        background-size: 324px auto;
-      }
-    }
-  }
-
-  .catalog__title--chicken-big {
-    position: relative;
-
-    &::after {
-      width: 280px;
-      height: 194px;
-      top: -246px;
-      right: 8px;
-      background-image: url("../img/chicken-big-tablet@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/chicken-big-tablet@2x.png");
-        background-size: 324px auto;
-      }
-    }
-  }
-
-  .catalog__title--fish-small {
-    position: relative;
-
-    &::after {
-      width: 227px;
-      height: 172px;
-      top: -210px;
-      right: 60px;
-      background-image: url("../img/fish-small-tablet@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/fish-small-tablet@2x.png");
-        background-size: 324px auto;
-      }
-    }
-  }
-
-  .catalog__title--fish-big {
-    position: relative;
-
-    &::after {
-      width: 280px;
-      height: 194px;
-      top: -246px;
-      right: 8px;
-      background-image: url("../img/fish-big-tablet@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/fish-big-tablet@2x.png");
-        background-size: 324px auto;
-      }
-    }
-  }
-
-  .catalog__title--buckwheat-small {
-    position: relative;
-
-    &::after {
-      width: 227px;
-      height: 172px;
-      top: -210px;
-      right: 60px;
-      background-image: url("../img/buckwheat-small-tablet@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/buckwheat-small-tablet@2x.png");
-        background-size: 324px auto;
-      }
-    }
-  }
-
-  .catalog__title--buckwheat-big {
-    position: relative;
-
-    &::after {
-      width: 280px;
-      height: 194px;
-      top: -246px;
-      right: 8px;
-      background-image: url("../img/buckwheat-big-tablet@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/buckwheat-big-tablet@2x.png");
-        background-size: 324px auto;
-      }
-    }
-  }
-
-  .catalog__title--rice-small {
-    position: relative;
-
-    &::after {
-      width: 227px;
-      height: 172px;
-      top: -210px;
-      right: 60px;
-      background-image: url("../img/rice-small-tablet@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/rice-small-tablet@2x.png");
-        background-size: 324px auto;
-      }
-    }
-  }
-
-  .catalog-link {
+  .catalog__link-order {
     padding: 8px 95px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__product {
-    margin-top: 56px;
-    margin-left: 2px;
+    margin-top: 39px;
+    margin-left: 1px;
     margin-bottom: 76px;
   }
 
   .catalog__info {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 
   .catalog__item {
-    margin-bottom: 85px;
+    margin-bottom: 89px;
     margin-top: 56px;
     margin-left: 25px;
     margin-right: 25px;
     padding-top: 115px;
-    padding-bottom: 46px;
+    padding-bottom: 42px;
     padding-left: 39px;
     padding-right: 39px;
     width: 247px;
     box-sizing: border-box;
   }
 
-  .catalog-link {
+  .catalog__link-order {
     padding: 8px 54px;
+  }
+
+  .catalog__chicken-small {
+    margin-top: -196px;
   }
 
   .catalog__title {
     padding-right: 62px;
-    margin-top: 48px;
+    margin-top: 22px;
     margin-bottom: 16px;
-    padding-left: 22px;
+    padding-left: 21px;
   }
 
   .catalog__volume,
@@ -492,103 +241,5 @@
   .catalog__price {
     padding-top: 7px;
     padding-bottom: 9px;
-  }
-
-  .catalog__title--chicken-small {
-    position: relative;
-
-    &::after {
-      right: 24px;
-      background-image: url("../img/chicken-small-desktop@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/chicken-small-desktop@2x.png");
-        background-size: 245px auto;
-      }
-    }
-  }
-
-  .catalog__title--chicken-big {
-    position: relative;
-
-    &::after {
-      right: -30px;
-      background-image: url("../img/chicken-big-desktop@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/chicken-big-desktop@2x.png");
-        background-size: 245px auto;
-      }
-    }
-  }
-
-  .catalog__title--fish-small {
-    position: relative;
-
-    &::after {
-      right: 24px;
-      background-image: url("../img/fish-small-desktop@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/fish-small-desktop@2x.png");
-        background-size: 245px auto;
-      }
-    }
-  }
-
-  .catalog__title--fish-big {
-    position: relative;
-
-    &::after {
-      right: -30px;
-      background-image: url("../img/fish-big-desktopt@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/fish-big-desktop@2x.png");
-        background-size: 245px auto;
-      }
-    }
-  }
-
-  .catalog__title--buckwheat-small {
-    position: relative;
-
-    &::after {
-      right: 24px;
-      background-image: url("../img/buckwheat-small-desktop@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/buckwheat-small-desktop@2x.png");
-        background-size: 245px auto;
-      }
-    }
-  }
-
-  .catalog__title--buckwheat-big {
-    position: relative;
-
-    &::after {
-      right: -30px;
-      background-image: url("../img/buckwheat-big-desktop@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/buckwheat-big-desktop@2x.png");
-        background-size: 245px auto;
-      }
-    }
-  }
-
-  .catalog__title--rice-small {
-    position: relative;
-
-    &::after {
-      right: 24px;
-      background-image: url("../img/rice-small-desktop@1x.png");
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/rice-small-desktop@2x.png");
-        background-size: 245px auto;
-      }
-    }
   }
 }

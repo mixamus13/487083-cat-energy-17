@@ -1,3 +1,7 @@
+.how-work {
+  margin-bottom: 47px;
+}
+
 .how-work__headline {
   @include list-reset;
   font-size: 36px;
@@ -95,12 +99,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .how-work {
+    margin-bottom: -18px;
+  }
+
   .how-work__list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-left: -36px;
     counter-reset: list1;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 768px;
+      border-bottom: 1px solid #d7d7d7;
+      bottom: 44px;
+      left: 16px;
+    }
   }
 
   .how-work__item {
@@ -214,6 +232,10 @@
 @media (min-width: $desktop-width) {
   .how-work__list {
     justify-content: start;
+
+    &::before {
+      border-bottom: none;
+    }
   }
 
   .how-work__item {
