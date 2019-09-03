@@ -75,4 +75,24 @@
   .main-nav__toggle {
     display: none;
   }
+
+  .site-list__item:hover {
+    color: #000000;
+    opacity: 0.6;
+
+    &:active,
+    &:focus {
+      opacity: 0.3;
+    }
+  }
+
+  .site-list__link--active {
+    border-bottom: 2px solid #69b738;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link--bg {
+    border-bottom: 2px solid #ffffff;
+  }
 }
