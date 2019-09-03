@@ -208,6 +208,10 @@
     line-height: 20px;
     margin-left: -332px;
     position: relative;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .program-cat__slim::after {
@@ -222,14 +226,38 @@
     background-position: 0 0;
   }
 
+  .program-cat__slim:hover::after {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 19px;
+    top: 8px;
+    margin-left: 25px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
   .program-cat__pro::after {
     content: "";
     position: absolute;
     width: 24px;
     height: 11px;
     top: 10px;
-    margin-left: 25px;
+    margin-left: 26px;
     background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .program-cat__pro:hover::after {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 19px;
+    top: 8px;
+    margin-left: 25px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
