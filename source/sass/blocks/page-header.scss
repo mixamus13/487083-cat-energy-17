@@ -20,6 +20,15 @@
   .page-header__logo {
     margin-top: 9px;
     margin-right: 105px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.6;
+    }
   }
 
   .page-header__logo-image {
