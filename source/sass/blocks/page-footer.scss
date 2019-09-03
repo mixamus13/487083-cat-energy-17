@@ -205,12 +205,24 @@
     padding-top: 62px;
   }
 
+  .contacts__invite--catalog {
+    padding-top: 0;
+  }
+
   .contacts__address {
     text-align: left;
     padding-top: 60px;
   }
 
+  .contacts__address--catalog {
+    padding-top: 0;
+  }
+
   .page-footer {
     margin-top: -219px;
+  }
+
+  .page-footer__logo-image {
+    margin-left: 17px;
   }
 }

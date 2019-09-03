@@ -29,3 +29,10 @@
     margin-right: -14px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright__link {
+    margin-right: 32px;
+    margin-left: -8px;
+  }
+}

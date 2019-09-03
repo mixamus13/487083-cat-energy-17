@@ -29,6 +29,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .gift {
+    margin-top: 69px;
+    margin-bottom: -75px;
+  }
+
   .gift__photo-table {
     margin-left: 10px;
   }
@@ -48,5 +53,28 @@
     top: -149px;
     padding-left: 386px;
     text-align: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    margin-top: 1px;
+    margin-bottom: -59px;
+    margin-left: 66px;
+  }
+
+  .gift__description {
+    padding-left: 0;
+    margin-right: 63px;
+    text-align: center;
+    padding-top: 29px;
+    margin-bottom: -13px;
+  }
+
+  .gift__description {
+    &::before {
+      top: -93px;
+      left: 57px;
+    }
   }
 }

@@ -175,22 +175,22 @@
 
 @media (min-width: $desktop-width) {
   .catalog__product {
-    margin-top: 56px;
-    margin-left: 2px;
+    margin-top: 39px;
+    margin-left: 1px;
     margin-bottom: 76px;
   }
 
   .catalog__info {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
   }
 
   .catalog__item {
-    margin-bottom: 85px;
+    margin-bottom: 89px;
     margin-top: 56px;
     margin-left: 25px;
     margin-right: 25px;
     padding-top: 115px;
-    padding-bottom: 46px;
+    padding-bottom: 42px;
     padding-left: 39px;
     padding-right: 39px;
     width: 247px;
@@ -201,11 +201,15 @@
     padding: 8px 54px;
   }
 
+  .catalog__chicken-small {
+    margin-top: -196px;
+  }
+
   .catalog__title {
     padding-right: 62px;
-    margin-top: 48px;
+    margin-top: 22px;
     margin-bottom: 16px;
-    padding-left: 22px;
+    padding-left: 21px;
   }
 
   .catalog__volume,
