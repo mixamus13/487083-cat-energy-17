@@ -189,12 +189,13 @@
   }
 
   .page-footer__contacts {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
+    position: relative;
     width: 570px;
     height: 201px;
-    margin-left: 110px;
     top: 300px;
+    left: -327px;
   }
 
   .contacts__invite {
