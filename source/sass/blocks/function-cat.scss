@@ -11,7 +11,7 @@
     content: "";
     position: absolute;
     height: 305px;
-    top: 0;
+    top: -3px;
     left: 0;
     right: 0;
     background-color: #63a73a;
@@ -74,6 +74,15 @@
   display: block;
   text-align: center;
   margin-bottom: 1px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -117,15 +126,6 @@
     order: -1;
     margin-top: 268px;
     position: absolute;
-
-    &:hover {
-      background-color: #5eaa2f;
-    }
-
-    &:active,
-    &:focus {
-      color: rgba(255, 255, 255, 0.3);
-    }
   }
 
   .function-cat::before {
@@ -178,7 +178,7 @@
 
   .function-cat__can {
     top: -211px;
-    left: 471px;
+    left: 470px;
     z-index: 2;
   }
 }

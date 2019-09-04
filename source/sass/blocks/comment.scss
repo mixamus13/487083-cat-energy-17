@@ -36,13 +36,22 @@
   padding-top: 11px;
   padding-left: 15px;
   padding-bottom: 10px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #efefef;
   text-transform: uppercase;
   flex-grow: 1;
   width: 100%;
   box-sizing: border-box;
   height: 150px;
   resize: vertical;
+
+  &:hover {
+    border: 1px solid #dbdbdb;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid #484848;
+  }
 }
 
 @media (min-width: $tablet-width) {

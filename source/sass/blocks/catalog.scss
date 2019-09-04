@@ -79,6 +79,15 @@
   text-transform: uppercase;
   padding: 10px 110px 10px;
   text-decoration: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -170,15 +179,6 @@
 
   .catalog__link-order {
     padding: 8px 95px;
-
-    &:hover {
-      background-color: #5eaa2f;
-    }
-
-    &:active,
-    &:focus {
-      color: rgba(255, 255, 255, 0.3);
-    }
   }
 }
 

@@ -30,9 +30,18 @@
 
 .parameters-cats__field {
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #efefef;
   padding: 10px 10px 10px 15px;
   flex-grow: 1;
+
+  &:hover {
+    border: 1px solid #dbdbdb;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid #484848;
+  }
 }
 
 .parameters-cats__info--age {
@@ -71,8 +80,22 @@
   top: -4px;
   left: 1px;
   position: absolute;
-  border: 1px solid #cdcdcd;
+  border: 1px solid rgba(228, 228, 228, 0.8);
   border-radius: 50%;
+}
+
+.parameters-cats__slimming:hover,
+.parameters-cats__mass:hover,
+.parameters-cats__advice:hover {
+  color: #222222;
+  opacity: 1;
+}
+
+.parameters-cats__slimming:active,
+.parameters-cats__mass:active,
+.parameters-cats__advice:active {
+  color: #222222;
+  opacity: 0.3;
 }
 
 .parameters-cats__slimming--radio:checked + label::after {

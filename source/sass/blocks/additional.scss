@@ -72,6 +72,15 @@
   padding: 11px 78px 11px 78px;
   margin-bottom: 14px;
   border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .additional__sup-sup {
@@ -169,15 +178,6 @@
     height: 53px;
     padding: 10px 66px 10px 66px;
     margin-left: 47px;
-
-    &:hover {
-      background-color: #5eaa2f;
-    }
-
-    &:active,
-    &:focus {
-      color: rgba(255, 255, 255, 0.3);
-    }
   }
 
   .additional__sup-sup {

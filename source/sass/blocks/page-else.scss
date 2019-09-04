@@ -46,6 +46,15 @@
   text-decoration: none;
   padding: 11px 94px 10px;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -61,15 +70,6 @@
 
   .page-else__button {
     padding: 9px 76px;
-
-    &:hover {
-      background-color: #ebebeb;
-    }
-
-    &:active,
-    &:focus {
-      color: rgba(68, 68, 68, 0.3);
-    }
   }
 
   .page-else__title {

@@ -11,10 +11,28 @@
   color: #444444;
   text-decoration: none;
   margin-bottom: 13px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 .copyright__logo {
   margin-top: -6px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {

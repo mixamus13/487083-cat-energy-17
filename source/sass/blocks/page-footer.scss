@@ -72,6 +72,15 @@
   margin-left: 76px;
   margin-bottom: 29px;
   position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__bg {
