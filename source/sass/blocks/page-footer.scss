@@ -7,10 +7,12 @@
 
 .page-footer__map {
   background-image: url("../img/bg-map-mobile@1x.png");
-  width: 320px;
+  width: 100%;
   height: 400px;
   position: relative;
   z-index: 1;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
@@ -108,10 +110,11 @@
 
   .page-footer__map {
     background-image: url("../img/bg-map-tablet@1x.png");
-    width: 767px;
+    width: 100%;
     height: 400px;
     position: relative;
     z-index: 1;
+    background-position: 50% 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.png");
@@ -173,8 +176,8 @@
   .page-footer__map {
     background-image: url("../img/bg-map-desktop@1x.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 1440px;
+    background-position: 50% 0;
+    width: 100%;
     height: 400px;
     position: relative;
     z-index: 1;

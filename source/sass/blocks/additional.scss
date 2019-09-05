@@ -1,27 +1,29 @@
-.additional__headline {
-  @include list-reset;
-  margin-top: 18px;
-  margin-bottom: 35px;
-  font-weight: 400;
+.additional__title {
   position: relative;
-
-  .additional__headline--bg {
-    padding: 0 24px 0 0;
-    position: relative;
-    background-color: #ffffff;
-    z-index: 1;
-  }
 
   &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 3px;
-    top: 50%;
-    right: 0;
-    left: 20px;
     background-color: #68b738;
+    display: block;
+    top: 55%;
   }
+}
+
+.additional__headline {
+  @include list-reset;
+  font-weight: 400;
+  margin-top: -1px;
+  margin-bottom: 35px;
+}
+
+.additional__headline--bg {
+  position: relative;
+  background-color: #ffffff;
+  padding: 0 24px;
+  margin-left: -24px;
 }
 
 .additional_checkbox-item {
@@ -44,8 +46,8 @@
 
 .additional_checkbox-item--checkbox + label::before {
   content: "";
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   top: -2px;
   left: -45px;
   position: absolute;
@@ -96,39 +98,34 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additional__headline {
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-    margin-top: 64px;
-    margin-left: 49px;
-    margin-bottom: 66px;
-
-    .additional__headline--bg {
-      padding: 0 42px 0 0;
-      position: relative;
-      background-color: #ffffff;
-      z-index: 1;
-    }
+  .additional__title {
+    position: relative;
+    margin-left: 0;
 
     &::before {
       content: "";
       position: absolute;
+      width: 100%;
       height: 3px;
       background-color: #68b738;
-      top: 22px;
-      right: -20px;
+      display: block;
+      top: 58%;
     }
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      background-color: #68b738;
-      top: 22px;
-      left: -69px;
-    }
+  .additional__headline {
+    @include list-reset;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: -1px;
+    margin-bottom: 65px;
+  }
+
+  .additional__headline--bg {
+    position: relative;
+    background-color: #ffffff;
+    padding: 0 40px;
+    margin-left: 10px;
   }
 
   .additional_checkbox-list {
@@ -194,19 +191,11 @@
 
 @media (min-width: $desktop-width) {
   .additional__headline {
-    margin-left: 19px;
+    margin-top: -2px;
+  }
 
-    &::before {
-      top: 22px;
-      right: -20px;
-      width: 1311px;
-    }
-
-    &::after {
-      width: 70px;
-      top: 22px;
-      left: -109px;
-    }
+  .additional__headline--bg {
+    margin-left: -21px;
   }
 
   .additional_checkbox-list {

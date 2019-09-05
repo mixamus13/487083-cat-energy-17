@@ -1,1 +1,24 @@
-//there
+@media (min-width: $desktop-width) {
+  .page-main__bg-cat {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 696px;
+      top: -131px;
+      left: 50%;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: 1;
+      background-color: #63a73a;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
+    }
+  }
+}

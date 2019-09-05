@@ -35,8 +35,8 @@
     </div>
   </nav>
 </header>
-<main class="page-main container">
-  <section class="catalog">
+<main class="page-main">
+  <section class="catalog container">
     <h2 class="catalog__product">Каталог продукции</h2>
     <div class="catalog__wrapper">
       <div class="catalog__list">
@@ -252,50 +252,55 @@
     </div>
   </section>
   <section class="catalog-additional">
-    <h2 class="catalog-additional__product"><span class="catalog-additional--header-bg">Дополнительные товары</span></h2>
-    <div class="catalog-additional__wrapper">
-      <ul class="catalog-additional__list">
-        <li class="catalog-additional__item">
+    <div class="catalog-additional__tittle">
+      <div class="container">
+        <h2 class="catalog-additional__product"><span class="catalog-additional--header-bg">Дополнительные товары</span>
+        </h2>
+      </div>
+    </div>
+    <div class="catalog-additional__wrapper container">
+      <div class="catalog-additional__list">
+        <div class="catalog-additional__item">
           <h3 class="catalog-additional__headline">Сахарозаменитель</h3>
-          <table class="catalog-additional__info">
-            <tr class="catalog-additional__weight-cost">
-              <td class="catalog-additional__volume">1 упаковка (100 г)</td>
-              <td class="catalog-additional__price">200 Р.</td>
-            </tr>
-          </table>
+          <div class="catalog-additional__info">
+            <div class="catalog-additional__weight-cost">
+              <p class="catalog-additional__volume">1 упаковка (100 г)</p>
+              <p class="catalog-additional__price">200 Р.</p>
+            </div>
+          </div>
           <a class="catalog__link-order catalog-link--additional" href="#">Заказать</a>
-        </li>
-        <li class="catalog-additional__item">
+        </div>
+        <div class="catalog-additional__item">
           <h3 class="catalog-additional__headline">Питьевая вода</h3>
-          <table class="catalog-additional__info">
-            <tr class="catalog-additional__weight-cost">
-              <td class="catalog-additional__volume">5 литров</td>
-              <td class="catalog-additional__price">50 Р.</td>
-            </tr>
-          </table>
+          <div class="catalog-additional__info">
+            <div class="catalog-additional__weight-cost">
+              <p class="catalog-additional__volume">5 литров</p>
+              <p class="catalog-additional__price">50 Р.</p>
+            </div>
+          </div>
           <a class="catalog__link-order catalog-link--additional" href="#">Заказать</a>
-        </li>
-        <li class="catalog-additional__item">
+        </div>
+        <div class="catalog-additional__item">
           <h3 class="catalog-additional__headline">Молоко</h3>
-          <table class="catalog-additional__info">
-            <tr class="catalog-additional__weight-cost">
-              <td class="catalog-additional__volume">1 литр</td>
-              <td class="catalog-additional__price">100 Р.</td>
-            </tr>
-          </table>
+          <div class="catalog-additional__info">
+            <div class="catalog-additional__weight-cost">
+              <p class="catalog-additional__volume">1 литр</p>
+              <p class="catalog-additional__price">100 Р.</p>
+            </div>
+          </div>
           <a class="catalog__link-order catalog-link--additional" href="#">Заказать</a>
-        </li>
-        <li class="catalog-additional__item">
+        </div>
+        <div class="catalog-additional__item">
           <h3 class="catalog-additional__headline">Витамины</h3>
-          <table class="catalog-additional__info">
-            <tr class="catalog-additional__weight-cost">
-              <td class="catalog-additional__volume">1 упаковка (30 г)</td>
-              <td class="catalog-additional__price">300 Р.</td>
-            </tr>
-          </table>
+          <div class="catalog-additional__info">
+            <div class="catalog-additional__weight-cost">
+              <p class="catalog-additional__volume">1 упаковка (30 г)</p>
+              <p class="catalog-additional__price">300 Р.</p>
+            </div>
+          </div>
           <a class="catalog__link-order catalog-link--additional" href="#">Заказать</a>
-        </li>
-      </ul>
+        </div>
+      </div>
       <div class="gift">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/gift-photo-desktop@1x.jpg 1x, img/gift-photo-desktop@2x.jpg 2x">
@@ -310,7 +315,8 @@
 <footer class="page-footer">
   <div class="page-footer__contacts page-footer__contacts--bg container">
     <h3 class="contacts__invite contacts__invite--catalog">приглашаем к сотрудничеству дилеров!</h3>
-    <p class="contacts__address contacts__address--catalog"><span class="contacts__address-city">ул. Большая Конюшенная, д. 19/8</span>Санкт-Петербург</p>
+    <p class="contacts__address contacts__address--catalog"><span class="contacts__address-city">ул. Большая Конюшенная, д. 19/8</span>Санкт-Петербург
+    </p>
   </div>
   <div class="page-footer__map container">
   </div>

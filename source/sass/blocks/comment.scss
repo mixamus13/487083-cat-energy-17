@@ -1,28 +1,29 @@
-.comment__headline {
-  @include list-reset;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
+.comment__title {
   position: relative;
-  margin-bottom: 35px;
-
-  .comment__headline--bg {
-    padding: 0 24px 0 0;
-    position: relative;
-    background-color: #ffffff;
-    z-index: 1;
-  }
 
   &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 3px;
-    top: 50%;
-    right: 0;
-    left: 20px;
     background-color: #68b738;
+    display: block;
+    top: 55%;
   }
+}
+
+.comment__headline {
+  @include list-reset;
+  font-weight: 400;
+  margin-top: -6px;
+  margin-bottom: 30px;
+}
+
+.comment__headline--bg {
+  position: relative;
+  background-color: #ffffff;
+  padding: 0 24px;
+  margin-left: -24px;
 }
 
 .comment__info {
@@ -55,30 +56,29 @@
 }
 
 @media (min-width: $tablet-width) {
-  .comment__headline {
-    font-size: 37px;
-    line-height: 36px;
-    font-weight: 400;
-    letter-spacing: -0.4px;
-    margin-left: 49px;
-    margin-bottom: 76px;
+  .comment {
+    margin-bottom: 66px;
+  }
+
+  .comment__title {
+    margin-left: 0;
 
     &::before {
-      width: 30px;
-      height: 3px;
-      top: 22px;
-      left: -69px;
+      top: 57%;
     }
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 479px;
-      height: 3px;
-      background-color: #68b738;
-      top: 22px;
-      right: -20px;
-    }
+  .comment__headline {
+    @include list-reset;
+    font-size: 37px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 75px;
+  }
+
+  .comment__headline--bg {
+    padding: 0 36px;
+    margin-left: 11px;
   }
 
   .comment-field {
@@ -94,25 +94,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .comment__headline {
-    margin-left: 19px;
-
-    &::before {
-      width: 71px;
-      height: 3px;
-      top: 22px;
-      left: -109px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 1111px;
-      height: 3px;
-      background-color: #68b738;
-      top: 22px;
-      right: -90px;
-    }
+  .comment__headline--bg {
+    margin-left: -18px;
   }
 
   .comment-field {

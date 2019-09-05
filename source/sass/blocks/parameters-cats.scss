@@ -52,9 +52,10 @@
   margin: 0 -20px;
   padding: 0 -20px;
   margin-bottom: 29px;
+  margin-left: -1px;
   border-top: 1px solid #dfdfdf;
   padding-top: 25px;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
   border-bottom: 1px solid #dfdfdf;
 }
 
@@ -64,7 +65,7 @@
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: 1px;
 }
 
 .parameters-cats__item {
@@ -75,8 +76,8 @@
 
 .parameters-cats__slimming--radio + label::before {
   content: "";
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   top: -4px;
   left: 1px;
   position: absolute;
@@ -100,10 +101,10 @@
 
 .parameters-cats__slimming--radio:checked + label::after {
   content: "";
-  width: 8px;
-  height: 8px;
-  top: 5px;
-  left: 10px;
+  width: 9px;
+  height: 9px;
+  top: 6px;
+  left: 11px;
   position: absolute;
   border: 1px solid #68b738;
   background-color: #68b738;
@@ -158,10 +159,10 @@
   }
 
   .parameters-cats__checkbox-filter {
-    margin-left: 71px;
-    margin-right: 67px;
+    margin-left: 51px;
+    margin-right: 47px;
     border: 1px solid #cdcdcd;
-    padding: 36px 81px 3px 41px;
+    padding: 36px 81px 0 41px;
     margin-bottom: 42px;
   }
 

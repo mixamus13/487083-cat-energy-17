@@ -143,28 +143,9 @@
   }
 
   .function-cat__headline {
-    position: relative;
     margin-left: 98px;
     margin-top: 66px;
     margin-bottom: 16px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 720px;
-      height: 696px;
-      top: -222px;
-      left: 527px;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      z-index: 1;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 720px auto;
-      }
-    }
   }
 
   .function-cat__slogan {
