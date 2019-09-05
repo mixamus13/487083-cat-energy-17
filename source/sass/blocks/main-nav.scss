@@ -30,7 +30,7 @@
   content: "";
   position: absolute;
   top: -23px;
-  right: 0;
+  right: -21px;
   width: 25px;
   height: 19px;
   background-image: url("../img/icon-mobile-menu.svg");
@@ -48,7 +48,7 @@
     content: "";
     position: absolute;
     top: -23px;
-    right: 0;
+    right: -21px;
     width: 19px;
     height: 19px;
     background-image: url("../img/icon-close.svg");
@@ -70,6 +70,10 @@
 @media (min-width: $tablet-width) {
   .main-nav__list {
     text-align: center;
+  }
+
+  .main-nav__wrapper {
+    display: block;
   }
 
   .main-nav__toggle {
@@ -101,6 +105,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    display: block;
+  }
+
   .site-list__link--bg {
     position: relative;
 

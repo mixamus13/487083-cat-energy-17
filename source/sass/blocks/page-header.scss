@@ -11,6 +11,12 @@
   padding: 14px 10px;
 }
 
+.page-header__logo-image {
+  margin-top: -2px;
+  margin-bottom: 1px;
+  margin-left: -10px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
