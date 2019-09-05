@@ -10,7 +10,7 @@
   line-height: 16px;
   color: #444444;
   text-decoration: none;
-  margin-bottom: 13px;
+  margin-bottom: 30px;
 
   &:hover {
     opacity: 0.8;
@@ -22,17 +22,8 @@
   }
 }
 
-//.copyright__logo:hover path {
-//  fill: #69b738;
-//}
-//
-//.copyright__logo:active path,
-//.copyright__logo:focus path {
-//  fill: rgb(105, 183, 56, 0.3);
-//}
-
 .copyright__logo {
-  margin-top: 6px;
+  margin-top: -10px;
 
   &:hover path {
     fill: #69b738;
@@ -40,7 +31,7 @@
 
   &:active path,
   &:focus path {
-    fill: rgb(105, 183, 56, 0.3);
+    fill: rgba(105, 183, 56, 0.3);
   }
 }
 
@@ -52,14 +43,20 @@
   }
 
   .copyright__logo {
-    margin-top: -9px;
-    margin-right: -14px;
+    margin-top: -8px;
+    margin-right: 12px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .copyright__link {
-    margin-right: 32px;
+    margin-right: 23px;
     margin-left: -8px;
+    margin-top: 3px;
+  }
+
+  .copyright__logo {
+    margin-top: -6px;
+    margin-right: 20px;
   }
 }
