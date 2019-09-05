@@ -79,6 +79,10 @@
   }
 }
 
+.data-cats__field--email:invalid {
+  border: 2px solid #ff8282;
+}
+
 .data-cats__label--email:active::before {
   background-image: url("../img/mail-svg-green.svg");
 }
