@@ -27,7 +27,6 @@
 .social__item {
   list-style: none;
 
-
   &:first-child {
     margin-left: -8px;
     margin-right: 33px;
@@ -35,6 +34,28 @@
 
   &:nth-child(2) {
     margin-right: 40px;
+  }
+}
+
+//.social__link:hover path {
+//  fill: #69b738;
+//}
+//
+//.social__link:active path,
+//.social__link:focus path {
+//  fill: rgb(105, 183, 56, 0.3);
+//}
+
+.social__link {
+  margin-top: 6px;
+
+  &:hover path {
+    fill: #69b738;
+  }
+
+  &:active path,
+  &:focus path {
+    fill: rgb(105, 183, 56, 0.3);
   }
 }
 

@@ -22,16 +22,25 @@
   }
 }
 
-.copyright__logo {
-  margin-top: -6px;
+//.copyright__logo:hover path {
+//  fill: #69b738;
+//}
+//
+//.copyright__logo:active path,
+//.copyright__logo:focus path {
+//  fill: rgb(105, 183, 56, 0.3);
+//}
 
-  &:hover {
-    opacity: 0.8;
+.copyright__logo {
+  margin-top: 6px;
+
+  &:hover path {
+    fill: #69b738;
   }
 
-  &:active,
-  &:focus {
-    opacity: 0.6;
+  &:active path,
+  &:focus path {
+    fill: rgb(105, 183, 56, 0.3);
   }
 }
 
