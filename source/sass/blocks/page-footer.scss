@@ -18,18 +18,17 @@
     background-image: url("../img/bg-map-mobile@2x.png");
     background-size: 320px auto;
   }
+}
 
-  &::before {
-    content: "";
-    top: 177px;
-    left: 136px;
-    width: 55px;
-    height: 53px;
-    position: absolute;
-    background-image: url("../img/map-pin-png-50.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
+.page-footer__pin {
+  top: 177px;
+  width: 55px;
+  height: 53px;
+  position: relative;
+  background-image: url("../img/map-pin-png-50.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
 }
 
 .page-footer__contacts {
@@ -119,23 +118,18 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.png");
       background-size: 768px auto;
+    }
+  }
 
-      &::before {
-        content: "";
-        top: 151px;
-        left: 334px;
-        width: 113px;
-        height: 106px;
-        position: absolute;
-        background-image: url("../img/map-pin.png");
-        background-repeat: no-repeat;
-        background-position: 0 0;
+  .page-footer__pin {
+    top: 150px;
+    width: 113px;
+    height: 106px;
+    background-image: url("../img/map-pin.png");
 
-        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          background-image: url("../img/map-pin-png-50@2x.png");
-          background-size: 113px auto;
-        }
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin-png-50@2x.png");
+      background-size: 113px auto;
     }
   }
 
@@ -185,19 +179,15 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.png");
       background-size: 1440px auto;
-
-      &::before {
-        content: "";
-        top: 156px;
-        left: 1003px;
-        width: 113px;
-        height: 106px;
-        position: absolute;
-        background-image: url("../img/map-pin.png");
-        background-repeat: no-repeat;
-        background-position: 0 0;
-      }
     }
+  }
+
+  .page-footer__pin {
+    top: 158px;
+    right: -340px;
+    width: 113px;
+    height: 106px;
+    background-image: url("../img/map-pin.png");
   }
 
   .page-footer__contacts {
