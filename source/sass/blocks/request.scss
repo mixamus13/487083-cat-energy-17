@@ -1,0 +1,68 @@
+.request__button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738;
+  padding: 11px 78px 11px 78px;
+  margin-bottom: 14px;
+  border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.request__sup-sup {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  margin-left: 63px;
+}
+
+.request__sup {
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .request {
+    display: flex;
+  }
+
+  .request__button {
+    font-size: 20px;
+    line-height: 20px;
+    height: 53px;
+    padding: 10px 66px 10px 66px;
+    margin-left: 47px;
+  }
+
+  .request__sup-sup {
+    font-size: 16px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  .request__sup {
+    margin-bottom: 34px;
+    padding-top: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request {
+    margin-bottom: 80px;
+  }
+
+  .request__button {
+    padding: 9px 210px 12px 205px;
+    margin-left: 21px;
+    margin-right: 20px;
+  }
+}
