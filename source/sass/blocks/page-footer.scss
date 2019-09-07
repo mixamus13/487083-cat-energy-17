@@ -20,9 +20,17 @@
   }
 }
 
+.page-footer__map-google iframe {
+  left: 0;
+  top: 0;
+  height: 400px;
+  width: 100%;
+  border: none;
+}
+
 .page-footer__pin {
   right: -3px;
-  top: 177px;
+  top: -226px;
   width: 55px;
   height: 53px;
   position: relative;
@@ -124,7 +132,7 @@
 
   .page-footer__pin {
     right: -6px;
-    top: 150px;
+    top: -255px;
     width: 113px;
     height: 106px;
     background-image: url("../img/map-pin.png");
@@ -185,7 +193,7 @@
   }
 
   .page-footer__pin {
-    top: 155px;
+    top: -249px;
     right: -340px;
     width: 113px;
     height: 106px;
