@@ -19,7 +19,7 @@
   margin-bottom: 30px;
 }
 
-.comment__headline--bg {
+.comment__headline-bg {
   position: relative;
   background-color: #ffffff;
   padding: 0 24px;
@@ -76,7 +76,7 @@
     margin-bottom: 75px;
   }
 
-  .comment__headline--bg {
+  .comment__headline-bg {
     padding: 0 36px;
     margin-left: 11px;
   }
@@ -94,7 +94,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .comment__headline--bg {
+  .comment__headline-bg {
     margin-left: -18px;
   }
 

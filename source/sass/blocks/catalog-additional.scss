@@ -27,7 +27,7 @@
   width: 290px;
 }
 
-.catalog-additional--header-bg {
+.catalog-additional__header-bg {
   position: relative;
   background-color: #ffffff;
   padding: 0 24px;
@@ -126,7 +126,7 @@
     width: auto;
   }
 
-  .catalog-additional--header-bg {
+  .catalog-additional__header-bg {
     padding: 0 40px 0 40px;
     margin-left: 6px;
   }
@@ -159,7 +159,7 @@
     margin-bottom: 6px;
   }
 
-  .catalog-link--additional {
+  .catalog__link-order--additional {
     padding: 10px 284px;
     margin-bottom: -8px;
     margin-left: -2px;
@@ -167,6 +167,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-additional {
+    margin-bottom: 66px;
+  }
+
   .catalog-additional__wrapper {
     display: flex;
   }
@@ -216,12 +220,12 @@
     margin-bottom: 79px;
   }
 
-  .catalog-additional--header-bg {
+  .catalog-additional__header-bg {
     padding: 0 36px 0 35px;
     margin-left: -17px;
   }
 
-  .catalog-link--additional {
+  .catalog__link-order--additional {
     padding: 9px 92px;
     margin-top: -8px;
     margin-bottom: 0;
