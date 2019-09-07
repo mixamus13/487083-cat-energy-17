@@ -40,6 +40,9 @@
   .page-header__logo-image {
     width: 174px;
     height: 59px;
+    margin-top: 1px;
+    margin-bottom: 0;
+    margin-left: -1px;
   }
 }
 
@@ -52,5 +55,7 @@
   .page-header__logo-image {
     width: 203px;
     height: 60px;
+    margin-top: -1px;
+    margin-left: 0;
   }
 }

@@ -13,6 +13,12 @@
   text-transform: uppercase;
   margin-right: 33px;
   margin-bottom: 38px;
+  width: 323px;
+}
+
+.parameters-cat__list {
+  display: flex;
+  flex-direction: column;
 }
 
 .parameters-cats__info {
@@ -20,19 +26,25 @@
   line-height: 18px;
   text-transform: uppercase;
   display: flex;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   align-items: baseline;
 }
 
 .parameters-cats__data {
-  margin-right: 15px;
+  margin-right: 12px;
+}
+
+.parameters-cats__data--width {
+  width: 34%;
 }
 
 .parameters-cats__field {
   text-transform: uppercase;
   border: 1px solid #efefef;
-  padding: 10px 10px 10px 15px;
+  height: 45px;
+  padding: 0 10px 0 15px;
   flex-grow: 1;
+  width: 50%;
 
   &:hover {
     border: 1px solid #dbdbdb;
@@ -77,8 +89,8 @@
   content: "";
   width: 28px;
   height: 28px;
-  top: -4px;
-  left: 1px;
+  top: -6px;
+  left: 0;
   position: absolute;
   border: 1px solid rgba(228, 228, 228, 0.8);
   border-radius: 50%;
@@ -102,8 +114,8 @@
   content: "";
   width: 9px;
   height: 9px;
-  top: 6px;
-  left: 11px;
+  top: 4px;
+  left: 9px;
   position: absolute;
   border: 1px solid #68b738;
   background-color: #68b738;
@@ -123,7 +135,6 @@
     font-size: 20px;
     line-height: 30px;
     margin-left: 51px;
-    width: 322px;
     margin-bottom: 66px;
   }
 
@@ -137,11 +148,16 @@
     line-height: 20px;
   }
 
+  .parameters-cats__data--width {
+    width: 18%;
+  }
+
   .parameters-cats__field {
     font-size: 20px;
     line-height: 20px;
     margin-right: 47px;
-    padding: 10px 10px 10px 21px;
+    height: 50px;
+    padding: 0 10px 0 21px;
   }
 
   .parameters-cats__info--age {
@@ -210,6 +226,7 @@
 
   .parameters-cats__description {
     margin-left: 20px;
+    width: 323px;
   }
 
   .parameters-cats__part {
@@ -228,14 +245,18 @@
     margin-right: 30px;
   }
 
+  .parameters-cats__data--width {
+    width: 20%;
+  }
+
   .parameters-cats__checkbox {
     margin-bottom: 24px;
   }
 
   .parameters-cats__checkbox-filter {
     width: 445px;
-    margin-top: -25px;
-    margin-right: 40px;
+    margin-top: -26px;
+    margin-right: 21px;
     padding: 36px 81px 0 41px;
   }
 }
