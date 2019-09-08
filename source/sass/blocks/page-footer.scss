@@ -5,21 +5,6 @@
   color: #000000;
 }
 
-//.page-footer__map {
-//  background-image: url("../img/bg-map-mobile@1x.png");
-//  width: 100%;
-//  height: 400px;
-//  position: relative;
-//  z-index: 1;
-//  background-position: 50% 0;
-//  background-repeat: no-repeat;
-//
-//  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-//    background-image: url("../img/bg-map-mobile@2x.png");
-//    background-size: 320px auto;
-//  }
-//}
-
 .page-footer__map-google iframe {
   position: relative;
   left: 0;
@@ -29,18 +14,6 @@
   border: none;
   margin-bottom: -59px;
   margin-top: 40px;
-}
-
-.page-footer__pin {
-  right: -3px;
-  top: -169px;
-  width: 55px;
-  height: 53px;
-  position: relative;
-  background-image: url("../img/map-pin-png-50.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  z-index: 2;
 }
 
 .page-footer__contacts {
@@ -98,6 +71,7 @@
 
 .page-footer__bg {
   background-color: #f2f2f2;
+  margin-top: 53px;
 }
 
 @media (min-width: $tablet-width) {
@@ -123,33 +97,6 @@
     height: 400px;
     margin-bottom: -115px;
     margin-top: 4px;
-  }
-
-  //.page-footer__map {
-  //  background-image: url("../img/bg-map-tablet@1x.png");
-  //  width: 100%;
-  //  height: 400px;
-  //  position: relative;
-  //  z-index: 1;
-  //  background-position: 50% 0;
-  //
-  //  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //    background-image: url("../img/bg-map-tablet@2x.png");
-  //    background-size: 768px auto;
-  //  }
-  //}
-
-  .page-footer__pin {
-    right: -6px;
-    top: -139px;
-    width: 113px;
-    height: 106px;
-    background-image: url("../img/map-pin.png");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/map-pin-png-50@2x.png");
-      background-size: 113px auto;
-    }
   }
 
   .page-footer__contacts {
@@ -183,6 +130,10 @@
     display: inline-block;
     margin-bottom: 19px;
   }
+
+  .page-footer__bg {
+    margin-top: 99px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -190,32 +141,9 @@
     padding-top: 41px;
   }
 
-  //.page-footer__map {
-  //  background-image: url("../img/bg-map-desktop@1x.png");
-  //  background-repeat: no-repeat;
-  //  background-position: 50% 0;
-  //  width: 100%;
-  //  height: 400px;
-  //  position: relative;
-  //  z-index: 1;
-  //
-  //  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //    background-image: url("../img/bg-map-desktop@2x.png");
-  //    background-size: 1440px auto;
-  //  }
-  //}
-
   .page-footer__map-google iframe {
     margin-bottom: -111px;
     margin-top: 1px;
-  }
-
-  .page-footer__pin {
-    top: -137px;
-    right: -340px;
-    width: 113px;
-    height: 106px;
-    background-image: url("../img/map-pin.png");
   }
 
   .page-footer__contacts {
@@ -255,5 +183,9 @@
 
   .page-footer__logo-image {
     margin-left: 17px;
+  }
+
+  .page-footer__bg {
+    margin-top: 104px;
   }
 }

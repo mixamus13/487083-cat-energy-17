@@ -332,7 +332,7 @@
 @media (min-width: $desktop-width) {
   .living-example {
     display: flex;
-    width: 1440px;
+    width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -343,14 +343,14 @@
   }
 
   .living-example__headline {
-    margin-left: 71px;
+    margin-left: 0;
     margin-top: -18px;
     margin-bottom: 146px;
   }
 
   .living-example__description {
-    margin-left: 57px;
-    margin-right: 104px;
+    margin-left: -11px;
+    margin-right: 30px;
     margin-bottom: 67px;
   }
 
@@ -361,7 +361,7 @@
   .living-example__list {
     flex-wrap: wrap;
     width: 366px;
-    margin-left: 70px;
+    margin-left: 0;
   }
 
   .living-example__costs-money {
@@ -381,16 +381,16 @@
     position: relative;
     z-index: 2;
     margin-top: -53px;
-    left: 6px;
+    left: 20px;
 
     &::before {
       content: "";
-      background-image: linear-gradient(to right, #f2f2f2 72.7%, #ebebeb 50%);
-      width: 1440px;
+      background-image: linear-gradient(to right, #f2f2f2 75%, #ebebeb 50%);
+      width: 1300px;
       height: 462px;
       position: absolute;
       top: 187px;
-      left: -670px;
+      left: -543px;
       z-index: 1;
     }
   }
