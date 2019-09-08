@@ -98,13 +98,21 @@
 .parameters-cats__slimming:hover,
 .parameters-cats__mass:hover,
 .parameters-cats__advice:hover {
-  color: #222222;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .parameters-cats__slimming:active,
 .parameters-cats__mass:active,
 .parameters-cats__advice:active {
+  color: #222222;
+  opacity: 0.3;
+}
+
+.additional__point:hover {
+  opacity: 0.7;
+}
+
+.additional__point:active {
   color: #222222;
   opacity: 0.3;
 }
